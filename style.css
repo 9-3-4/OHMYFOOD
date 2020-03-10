@@ -1,0 +1,14 @@
+/*$myMargin: 0px auto;
+$myColor: #FFD54F;
+$myBackground-color: #FAFAFA;
+$myWidth: 600px;*/
+h1 {
+  /*color: $myColor;
+  margin: $myMargin;*/
+  background-color: #26A69A;
+}
+h1 span {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
