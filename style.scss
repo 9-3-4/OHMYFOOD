@@ -1,13 +1,25 @@
-/*$myMargin: 0px auto;
-$myColor: #FFD54F;
-$myBackground-color: #FAFAFA;
-$myWidth: 600px;*/
+$couleur-de-fond:#26A69A;
+$couleur-texte:#FFD54F;
+$lien:none;
+$couleur-menu:#0000;
 
-h1 {
-	/*color: $myColor;
-	margin: $myMargin;*/
-	background-color:#26A69A;
-	span{color:red}
+
+a.menu--lien {
+	color:$couleur-texte;
+	background-color:$couleur-de-fond;
+	text-decoration:$lien;
+	margin: 70px;
+	height: 150px;
+	
 }
+.titre--lien{
+	text-decoration: $lien;	
+}
+
+
+
+
+
+
 
 

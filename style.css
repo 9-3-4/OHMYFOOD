@@ -1,14 +1,13 @@
-/*$myMargin: 0px auto;
-$myColor: #FFD54F;
-$myBackground-color: #FAFAFA;
-$myWidth: 600px;*/
-h1 {
-  /*color: $myColor;
-  margin: $myMargin;*/
+a.menu--lien {
+  color: #FFD54F;
   background-color: #26A69A;
+  text-decoration: none;
+  margin: 70px;
+  height: 150px;
 }
-h1 span {
-  color: red;
+
+.titre--lien {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
