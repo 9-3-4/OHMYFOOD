@@ -1,17 +1,48 @@
+@font-face {
+    font-family: Monserrat;
+	src: url(Font/Monserrat-Regular.ttf);
+	font-family: Roboto;
+	src: url(Font/Roboto-Regular.ttf);
+}
+
 $couleur-de-fond:#26A69A;
 $couleur-texte:#FFD54F;
 $lien:none;
 $couleur-menu:#0000;
 
 
-a.menu--lien {
+.lien {
+	font-family: Roboto;
 	color:$couleur-texte;
 	background-color:$couleur-de-fond;
-	text-decoration:$lien;
-	margin: 70px;
-	height: 150px;
-	
-}
+	text-decoration:$lien;	
+		/*.logo{*/
+			text-align: center;
+			display: block;
+			width: auto;
+			margin: auto;
+			padding: 15px 0px;
+			font-size: 30px;
+			
+		}
+		.prochainement{
+			margin-bottom: 15px;
+			max-width: 250px;
+			border-radius: 5%;
+			font-size: 20px;
+			
+		}
+		.mention{
+			display: flex;
+			flex-direction: row;
+			width: 50%;
+		}
+		.contact{
+			display: flex;
+			flex-direction: row;
+			width: 50%;
+		}
+
 .titre--lien{
 	text-decoration: $lien;	
 }

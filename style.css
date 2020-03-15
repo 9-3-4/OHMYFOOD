@@ -1,9 +1,40 @@
-a.menu--lien {
+@font-face {
+  font-family: Monserrat;
+  src: url(Font/Monserrat-Regular.ttf);
+  font-family: Roboto;
+  src: url(Font/Roboto-Regular.ttf);
+}
+.lien {
+  font-family: Roboto;
   color: #FFD54F;
   background-color: #26A69A;
   text-decoration: none;
-  margin: 70px;
-  height: 150px;
+  /*.logo{*/
+  text-align: center;
+  display: block;
+  width: auto;
+  margin: auto;
+  padding: 15px 0px;
+  font-size: 30px;
+}
+
+.prochainement {
+  margin-bottom: 15px;
+  max-width: 250px;
+  border-radius: 5%;
+  font-size: 20px;
+}
+
+.mention {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
 }
 
 .titre--lien {
