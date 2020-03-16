@@ -9,7 +9,9 @@
   color: #FFD54F;
   background-color: #26A69A;
   text-decoration: none;
-  /*.logo{*/
+}
+
+.logo {
   text-align: center;
   display: block;
   width: auto;
@@ -18,13 +20,51 @@
   font-size: 30px;
 }
 
-.prochainement {
+.prochain {
   margin-bottom: 15px;
-  max-width: 250px;
-  border-radius: 5%;
+  padding-left: 15px;
+  width: 150px;
+  border-radius: 10px;
   font-size: 20px;
+  display: inline-flex;
 }
 
+.point:nth-child(1),
+.point:nth-child(2),
+.point:nth-child(3) {
+  width: 7px;
+  height: 7px;
+  display: inline-flex;
+  border-radius: 100px;
+  animation: PopUp 0.1s ease-in infinite;
+}
+
+.point:nth-child(1) {
+  background-color: #FFD54F;
+  animation-delay: 0.5s;
+}
+
+.point:nth-child(2) {
+  background-color: #FFD54F;
+  animation-delay: 0.1s;
+}
+
+.point:nth-child(3) {
+  background-color: #FFD54F;
+  animation-delay: 0.15s;
+}
+
+@keyframes PopUp {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .mention {
   display: flex;
   flex-direction: row;
