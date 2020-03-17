@@ -1,0 +1,76 @@
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+.prochain span {
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.prochain span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.prochain span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@font-face {
+  font-family: Monserrat;
+  src: url("../Font/Monserrat-Regular.ttf");
+  font-family: Roboto;
+  src: url("../Font/Roboto-Regular.ttf");
+}
+.backgroundedcontent {
+  font-family: Roboto;
+  background-color: #26A69A;
+}
+.backgroundedcontent a, .backgroundedcontent.prochain {
+  text-decoration: none;
+  color: #FFD54F;
+}
+
+.logo {
+  text-align: center;
+  display: block;
+  width: auto;
+  margin: auto;
+  padding: 15px 0px;
+  font-size: 30px;
+}
+
+.prochain {
+  margin-bottom: 15px;
+  padding-left: 15px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 18px;
+  display: inline-flex;
+}
+
+.mention {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.titre--lien {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

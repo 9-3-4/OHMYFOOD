@@ -1,0 +1,62 @@
+@import'animations';
+
+@font-face {
+    font-family: Monserrat;
+	src: url('../Font/Monserrat-Regular.ttf');
+	font-family: Roboto;
+	src: url('../Font/Roboto-Regular.ttf');
+}
+
+$couleur-de-fond:#26A69A;
+$couleur-texte:#FFD54F;
+$lien:none;
+$couleur-menu:#0000;
+
+
+.backgroundedcontent {
+	font-family: Roboto;
+	background-color:$couleur-de-fond;
+	
+	a, &.prochain{
+		text-decoration:$lien;
+		color:$couleur-texte;
+	}
+}
+
+.logo{
+	text-align: center;
+	display: block;
+	width: auto;
+	margin: auto;
+	padding: 15px 0px;
+	font-size: 30px;
+}
+.prochain{
+	margin-bottom: 15px;
+	padding-left: 15px;
+	width: 150px;
+	border-radius: 10px;
+	font-size: 18px;
+	display: inline-flex;
+}
+.mention{
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+}
+.contact{
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+}
+.titre--lien{
+	text-decoration: $lien;	
+}
+
+
+
+
+
+
+
+
