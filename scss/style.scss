@@ -1,4 +1,4 @@
-@import'animations';
+@import'animationellipsis';
 
 @font-face {
     font-family: Monserrat;
@@ -21,6 +21,16 @@ $couleur-menu:#0000;
 		text-decoration:$lien;
 		color:$couleur-texte;
 	}
+	&.foot{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: auto;
+		height: 60px;
+		padding: 0px 10px;
+		
+	}
 }
 
 .logo{
@@ -32,23 +42,16 @@ $couleur-menu:#0000;
 	font-size: 30px;
 }
 .prochain{
-	margin-bottom: 15px;
-	padding-left: 15px;
-	width: 150px;
-	border-radius: 10px;
+	width: 200px;
+	height: 40px;
+	border-radius: 8px;
 	font-size: 18px;
-	display: inline-flex;
-}
-.mention{
 	display: flex;
-	flex-direction: row;
-	width: 50%;
+	justify-content: center;
+	align-items: center;
+	margin: 15px auto;
 }
-.contact{
-	display: flex;
-	flex-direction: row;
-	width: 50%;
-}
+
 .titre--lien{
 	text-decoration: $lien;	
 }
