@@ -29,6 +29,8 @@
   src: url("../Font/Monserrat-Regular.ttf");
   font-family: Roboto;
   src: url("../Font/Roboto-Regular.ttf");
+  font-family: Devonshire;
+  src: url("../Font/Devonshire-Regular.ttf");
 }
 .backgroundedcontent {
   font-family: Roboto;
@@ -70,6 +72,38 @@
 
 .titre--lien {
   text-decoration: none;
+}
+
+.containermenu {
+  background-color: purple;
+  display: flex;
+}
+
+/*Style menu1*/
+body {
+  background-color: #ffcdd2;
+}
+
+aside.titlemenu {
+  text-align: center;
+  display: block;
+  width: auto;
+  margin: auto;
+  font-size: 20px;
+}
+
+img.note {
+  width: 70px;
+}
+
+h2 {
+  font-family: Devonshire;
+  /*&.h3.etape{
+  	font-size: 15px;
+  }	
+  &.p{
+  	font-size: 10px;
+  }*/
 }
 
 /*# sourceMappingURL=style.css.map */
