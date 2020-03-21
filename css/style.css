@@ -75,13 +75,13 @@
 }
 
 .containermenu {
-  background-color: purple;
   display: flex;
 }
 
 /*Style menu1*/
-body {
+main.containerprincipal {
   background-color: #ffcdd2;
+  margin: 15px;
 }
 
 aside.titlemenu {
@@ -98,12 +98,39 @@ img.note {
 
 h2 {
   font-family: Devonshire;
-  /*&.h3.etape{
-  	font-size: 15px;
-  }	
-  &.p{
-  	font-size: 10px;
-  }*/
 }
+
+.containerentree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerentree1 {
+  background-color: seagreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*.containerprix1{
+	background-color: royalblue;
+	display: flex;
+	flex-direction: row;
+
+	width: 50%;
+}
+.containerdescription2{
+	background-color: seagreen;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+.containerprix2{
+	background-color: royalblue;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}*/
 
 /*# sourceMappingURL=style.css.map */
