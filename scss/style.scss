@@ -7,13 +7,14 @@
 	src: url('../Font/Roboto-Regular.ttf');
 	font-family: Devonshire;
 	src: url('../Font/Devonshire-Regular.ttf');
+	font-family: Kalam;
+	src: url('../Font/Kalam-Regular.ttf');
 }
 
 $couleur-de-fond:#26A69A;
 $couleur-texte:#FFD54F;
 $lien:none;
 $couleur-menu:#0000;
-
 
 .backgroundedcontent {
 	font-family: Roboto;
@@ -51,20 +52,37 @@ $couleur-menu:#0000;
 	align-items: center;
 	margin: 15px auto;
 }
-
 .titre--lien{
 	text-decoration: $lien;	
 }
-.containermenu{
-	
+.containermenu1_2, .containermenu3_4{
 	display: flex;
+	flex-direction: row;
+	margin: 20px;
+	justify-content: space-between;
+}
+.menu-prev--note{
+	background-color: #ffcdd2;
+	height: 200px ;
+}
+.menu-prev--chic{
+	background-color: #ffebee;
+	height: 200px;
+}
+.menu-prev--delice{
+	background-color: #E0F7FA;
+	height: 200px;
+}
+.menu-prev--palette{
+	background-color: #F9FBE7;
+	height: 200px
 }
 
-
 /*Style menu1*/
-$font-texte-menu: Devonshire;
+$font-titre-menu1:Devonshire;
+$font-texte-menu1:Kalam;
 
-main.containerprincipal{
+section.containerprincipal{
 	background-color: #ffcdd2;
 	margin: 15px;
 }
@@ -75,42 +93,36 @@ aside.titlemenu{
 	margin: auto;
 	font-size: 20px;
 }
-img.note{
-	width: 70px;
+
+img.note1{
+	width: 60px;
 }
-h2{
-	font-family: $font-texte-menu;
+img.note2{
+	width: 30px;
 }
-.containerentree{
+h2.note, span.note{
+	font-family: $font-titre-menu1;
+
+}
+p.prix{
+	font-weight: bolder;
+}
+main.description{
+	font-family: $font-texte-menu1;
+	
+}
+.containerentree, .containerplat, .containerdessert{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	margin: 0px 100px;
+	
 }
-.containerentree1{
-	background-color: seagreen;
+
+.container1, .container2, .container3, .container4{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	
 
 }
-/*.containerprix1{
-	background-color: royalblue;
-	display: flex;
-	flex-direction: row;
-	
-	width: 50%;
-}
-.containerdescription2{
-	background-color: seagreen;
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-}
-.containerprix2{
-	background-color: royalblue;
-	display: flex;
-	flex-direction: row;
-	justify-content: right;
-}*/
+
 
