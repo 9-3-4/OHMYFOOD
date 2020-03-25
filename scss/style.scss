@@ -1,4 +1,5 @@
 @import'animationellipsis';
+@import'animationwiggle';
 
 @font-face {
     font-family: Monserrat;
@@ -32,6 +33,7 @@ $couleur-menu:#0000;
 		width: auto;
 		height: 60px;
 		padding: 0px 10px;
+		font-size: 30px;
 	}
 }
 .logo{
@@ -40,7 +42,7 @@ $couleur-menu:#0000;
 	width: auto;
 	margin: auto;
 	padding: 15px 0px;
-	font-size: 30px;
+	font-size: 50px;
 }
 .prochain{
 	width: 200px;
@@ -55,27 +57,34 @@ $couleur-menu:#0000;
 .titre--lien{
 	text-decoration: $lien;	
 }
-.containermenu1_2, .containermenu3_4{
+main.containermenu{
+	display: block;
+	width: 100%;
+	background-color: #FFFFE0;
+	/*margin: auto;*/
+}
+section.containermenu1_2, section.containermenu3_4{
 	display: flex;
 	flex-direction: row;
-	margin: 20px;
-	justify-content: space-between;
+	justify-content: space-around;
+	height: 80%;
 }
+
 .menu-prev--note{
 	background-color: #ffcdd2;
-	height: 200px ;
+	/*width: 80%;*/
 }
 .menu-prev--chic{
 	background-color: #ffebee;
-	height: 200px;
+	/*width: 80%;*/
 }
 .menu-prev--delice{
 	background-color: #E0F7FA;
-	height: 200px;
+	/*width: 80%;*/
 }
 .menu-prev--palette{
 	background-color: #F9FBE7;
-	height: 200px
+	/*width: 80%;*/
 }
 
 /*Style menu1*/
