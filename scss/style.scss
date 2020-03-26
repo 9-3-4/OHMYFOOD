@@ -57,34 +57,50 @@ $couleur-menu:#0000;
 .titre--lien{
 	text-decoration: $lien;	
 }
-main.containermenu{
-	display: block;
-	width: 100%;
-	background-color: #FFFFE0;
-	/*margin: auto;*/
-}
+
 section.containermenu1_2, section.containermenu3_4{
+	background-color: yellowgreen;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80em;
+	height: 45em;
+	
+}
+main.containermenu{
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFE0;
+
+	h2{
+		font-size: 3em;
+
+	}
 }
 
-.menu-prev--note{
+
+.containermenu1_2--note{
 	background-color: #ffcdd2;
-	/*width: 80%;*/
+	width: 40em;
+	max-height: 60em;
+	
 }
-.menu-prev--chic{
+.containermenu1_2--chic{
 	background-color: #ffebee;
-	/*width: 80%;*/
+	width: 40em;
+	max-height: 60em;
 }
-.menu-prev--delice{
+.containermenu3_4--delice{
 	background-color: #E0F7FA;
-	/*width: 80%;*/
+	width: 40em;
+	max-height: 60em;
 }
-.menu-prev--palette{
+.containermenu3_4--palette{
 	background-color: #F9FBE7;
-	/*width: 80%;*/
+	width: 40em;
+	max-height: 60em;
 }
 
 /*Style menu1*/
