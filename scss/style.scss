@@ -10,6 +10,12 @@
 	src: url('../Font/Devonshire-Regular.ttf');
 	font-family: Kalam;
 	src: url('../Font/Kalam-Regular.ttf');
+	font-family: Croissant;
+	src: url('../Font/CroissantOne-Regular.ttf');
+	font-family: Dancing;
+	src: url('../Font/DancingScript-VariableFont_wght.ttf');
+	font-family: Kaushan;
+	src: url('../Font/KaushanScript-Regular.ttf');
 }
 
 $couleur-de-fond:#26A69A;
@@ -55,52 +61,54 @@ $couleur-menu:#0000;
 	margin: 15px auto;
 }
 .titre--lien{
-	text-decoration: $lien;	
+	text-decoration: $lien;
+	font-size: 60px;
 }
 
 section.containermenu1_2, section.containermenu3_4{
-	background-color: yellowgreen;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80em;
+	margin: 10px auto 10px auto;
+	width: 75em;
 	height: 45em;
 	
 }
 main.containermenu{
 	display: flex;
 	flex-direction: column;
-	background-color: #FFFFE0;
 
 	h2{
-		font-size: 3em;
+		font-size: 50px;
+		
+		
 
 	}
 }
-
-
 .containermenu1_2--note{
 	background-color: #ffcdd2;
-	width: 40em;
+	width: 35em;
 	max-height: 60em;
-	
+	font-family: Devonshire;
 }
+
 .containermenu1_2--chic{
 	background-color: #ffebee;
-	width: 40em;
+	width: 35em;
 	max-height: 60em;
+	font-family: Croissant;
 }
 .containermenu3_4--delice{
 	background-color: #E0F7FA;
-	width: 40em;
+	width: 35em;
 	max-height: 60em;
+	font-family: Dancing;
 }
 .containermenu3_4--palette{
 	background-color: #F9FBE7;
-	width: 40em;
+	width: 35em;
 	max-height: 60em;
+	font-family: Kaushan;
 }
 
 /*Style menu1*/
