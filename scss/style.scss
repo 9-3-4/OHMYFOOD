@@ -9,9 +9,9 @@
 	font-family: Devonshire;
 	src: url('../Font/Devonshire-Regular.ttf');
 	font-family: Kalam;
-	src: url('../Font/Kalam-Regular.ttf');
-	font-family: Croissant;
-	src: url('../Font/CroissantOne-Regular.ttf');
+	src: url('../Font/Kalam-Regular.ttf');	
+	font-family: 'croissant_oneregular';
+	src: url('../Font/webfontkit-20200331-124117/croissantone-regular-webfont.ttf');
 	font-family: Dancing;
 	src: url('../Font/DancingScript-VariableFont_wght.ttf');
 	font-family: Kaushan;
@@ -80,10 +80,13 @@ main.containermenu{
 
 	h2{
 		font-size: 50px;
-		
-		
-
 	}
+}
+.containermenu section div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .containermenu1_2--note{
 	background-color: #ffcdd2;
@@ -96,7 +99,7 @@ main.containermenu{
 	background-color: #ffebee;
 	width: 35em;
 	max-height: 60em;
-	font-family: Croissant;
+	font-family: croissant_oneregular;
 }
 .containermenu3_4--delice{
 	background-color: #E0F7FA;
