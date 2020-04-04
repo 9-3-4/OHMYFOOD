@@ -75,6 +75,45 @@
   50% { transform: translate(-2px, 0); }
   100% { transform: translate(2px, 0); }
 }*/
+.contenu:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+h2.chic {
+  background-image: linear-gradient(to right, #D2691E 10%, #9370DB 90%, #8A2BE2);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+a.chic {
+  color: #D2691E;
+  font-weight: bold;
+}
+
+h2.delice {
+  background-image: linear-gradient(to right, #0000CD 10%, #03A9F4 90%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+a.delice {
+  color: #03A9F4;
+}
+
+h2.palette {
+  background-image: linear-gradient(to right, #4CAF50 10%, #CCFF90 90%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+a.palette {
+  color: #4CAF50;
+}
+
 @font-face {
   font-family: Monserrat;
   src: url("../Font/Monserrat-Regular.ttf");
@@ -104,10 +143,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: auto;
-  height: 60px;
+  width: 100%;
+  height: 40px;
   padding: 0px 10px;
   font-size: 30px;
+  position: fixed;
+  bottom: 0;
 }
 
 .logo {
@@ -127,7 +168,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px auto;
+  margin: 15px auto 50px auto;
 }
 
 .titre--lien {
@@ -157,33 +198,27 @@ main.containermenu h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 35em;
+  max-height: 60em;
 }
 
 .containermenu1_2--note {
   background-color: #ffcdd2;
-  width: 35em;
-  max-height: 60em;
   font-family: Devonshire;
 }
 
 .containermenu1_2--chic {
   background-color: #ffebee;
-  width: 35em;
-  max-height: 60em;
   font-family: croissant_oneregular;
 }
 
 .containermenu3_4--delice {
   background-color: #E0F7FA;
-  width: 35em;
-  max-height: 60em;
   font-family: Dancing;
 }
 
 .containermenu3_4--palette {
   background-color: #F9FBE7;
-  width: 35em;
-  max-height: 60em;
   font-family: Kaushan;
 }
 

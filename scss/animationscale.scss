@@ -1,0 +1,33 @@
+.contenu:hover{
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+h2.chic{ 
+    background-image: linear-gradient(to right, #D2691E 10%, #9370DB 90%, #8A2BE2);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+a.chic{
+    color: #D2691E;
+    font-weight: bold;
+}
+h2.delice{
+    background-image: linear-gradient(to right, #0000CD 10%, #03A9F4 90%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+a.delice{
+    color: #03A9F4;
+}
+h2.palette{
+    background-image: linear-gradient(to right, #4CAF50 10%, #CCFF90 90%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+a.palette{
+    color: #4CAF50;
+}
