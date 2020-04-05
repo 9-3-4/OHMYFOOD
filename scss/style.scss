@@ -53,6 +53,9 @@ $couleur-menu:#0000;
 	padding: 15px 0px;
 	font-size: 50px;
 }
+img.note1{
+	width: 60px;
+}
 .prochain{
 	width: 200px;
 	height: 40px;
@@ -67,15 +70,13 @@ $couleur-menu:#0000;
 	text-decoration: $lien;
 	font-size: 60px;
 }
-
 section.containermenu1_2, section.containermenu3_4{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	margin: 10px auto 10px auto;
 	width: 75em;
-	height: 45em;
-	
+	height: 45em;	
 }
 main.containermenu{
 	display: flex;
@@ -110,6 +111,37 @@ main.containermenu{
 	font-family: Kaushan;
 }
 
+/*Pour petit ecran*/
+@media only screen and (max-width:1023px){
+
+section.containermenu1_2, section.containermenu3_4{
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	height: 18em;
+	width: auto;
+
+
+	h2{
+		font-size: 25px;
+	}
+
+}
+.logo{
+	font-size: 30px;
+}
+img.note1{
+	width: 20px;
+}
+.titre--lien{
+	font-size: 25px;
+}
+.foot a{
+	font-size: 18px;
+}
+
+}
+
 /*Style menu1*/
 $font-titre-menu1:Devonshire;
 $font-texte-menu1:Kalam;
@@ -125,36 +157,28 @@ aside.titlemenu{
 	margin: auto;
 	font-size: 20px;
 }
-
-img.note1{
-	width: 60px;
-}
 img.note2{
 	width: 30px;
 }
 h2.note, span.note{
 	font-family: $font-titre-menu1;
-
 }
 p.prix{
 	font-weight: bolder;
 }
 main.description{
-	font-family: $font-texte-menu1;
-	
+	font-family: $font-texte-menu1;	
 }
 .containerentree, .containerplat, .containerdessert{
 	display: flex;
 	flex-direction: column;
-	margin: 0px 100px;
-	
+	margin: 0px 100px;	
 }
 
 .container1, .container2, .container3, .container4{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
 }
 
 
