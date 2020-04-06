@@ -111,22 +111,29 @@ main.containermenu{
 	font-family: Kaushan;
 }
 
-/*Pour petit ecran*/
+/*Pour mobile*/
 @media only screen and (max-width:1023px){
+
+
+.containermenu section div{
+	width: 18em;
+	max-height: 25em;
+
+}
 
 section.containermenu1_2, section.containermenu3_4{
 	display: flex;
 	flex-direction: column;
-	margin: 0px;
-	height: 18em;
-	width: auto;
-
+	margin: 10px 0px;
+	max-height: 15em;
 
 	h2{
 		font-size: 25px;
 	}
 
 }
+
+
 .logo{
 	font-size: 30px;
 }
@@ -139,7 +146,9 @@ img.note1{
 .foot a{
 	font-size: 18px;
 }
-
+.contenu:hover{
+	transform: none;
+}
 }
 
 /*Style menu1*/
