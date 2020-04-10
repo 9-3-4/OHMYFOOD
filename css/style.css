@@ -68,7 +68,7 @@
 .contenu:hover {
   transform: scale(1.2);
   opacity: 0.7;
-  transition: transform 0.2s;
+  transition: transform 1s;
 }
 
 h2.chic {
@@ -105,6 +105,28 @@ a.palette {
   color: #4CAF50;
 }
 
+/*h3.etape {
+	text-transform: lowercase;
+	display: inline-block;
+}
+
+h3.etape:first-letter {
+	text-transform: capitalize;
+}
+
+h3.etape:hover {
+	text-decoration: underline;
+}*/
+h3.etape {
+  text-decoration: none;
+  background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+
+h3.etape:hover {
+  background-size: 100% 100%;
+}
+
 @font-face {
   font-family: Monserrat;
   src: url("../Font/Monserrat-Regular.ttf");
@@ -118,11 +140,15 @@ a.palette {
   src: url("../Font/CroissantOne-regular.ttf");
   font-family: Dancing;
   src: url("../Font/DancingScript-VariableFont_wght.ttf");
-  font-family: Kaushan;
-  src: url("../Font/KaushanScript-Regular.ttf");
+  font-family: "kaushan_scriptregular";
+  src: url("../Font/kaushanscript-regular-webfont.woff2") format("woff2"), url("../Font/kaushanscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-family: "SegoePrint-Bold";
+  src: url("../Font/SegoePrint-Bold.ttf");
 }
 .backgroundedcontent {
-  font-family: Roboto;
+  font-family: Montserrat;
   background-color: #26A69A;
 }
 .backgroundedcontent a, .backgroundedcontent.prochain {
@@ -176,8 +202,7 @@ section.containermenu1_2, section.containermenu3_4 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 10px auto 10px auto;
-  width: 45em;
+  margin: 30px auto 30px auto;
   height: 30em;
 }
 
@@ -186,18 +211,25 @@ section.containermenu1_2, section.containermenu3_4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30em;
+  width: 25em;
   max-height: 60em;
-  margin: 0px 5px 0px 5px;
 }
 
 h2 {
   font-size: 35px;
 }
 
+div.menu {
+  box-shadow: 0px 0px 22px 4px #E0E0E0;
+  max-height: 350px;
+}
+
 .containermenu1_2--note {
   background-color: #ffcdd2;
   font-family: Devonshire;
+}
+.containermenu1_2--note a {
+  font-family: "SegoePrint-Bold";
 }
 
 .containermenu1_2--chic {
@@ -209,10 +241,13 @@ h2 {
   background-color: #E0F7FA;
   font-family: Dancing;
 }
+.containermenu3_4--delice a {
+  font-family: "SegoePrint-Bold";
+}
 
 .containermenu3_4--palette {
   background-color: #F9FBE7;
-  font-family: Kaushan;
+  font-family: "kaushan_scriptregular";
 }
 
 /*mobil*/
@@ -254,25 +289,42 @@ h2 {
   }
 }
 /*Style menu1*/
-section.containerprincipal {
-  background-color: #ffcdd2;
-  margin: 15px;
-}
-
 aside.titlemenu {
   text-align: center;
   display: block;
   width: auto;
   margin: auto;
-  font-size: 20px;
+  font-size: 42px;
 }
 
-img.note2 {
+section.containerprincipal {
+  background-color: #ffcdd2;
+  margin: 15px;
+  width: 45em;
+  height: 62em;
+  margin: auto;
+}
+
+h2.note {
+  font-family: Devonshire;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+}
+
+aside.notemusic {
+  display: flex;
+  justify-content: center;
+  font-weight: 15px;
+  margin: 45px;
+  font-size: 20px;
+}
+aside.notemusic img.note2 {
   width: 30px;
 }
 
-h2.note, span.note {
-  font-family: Devonshire;
+h3.etape {
+  margin: 0px 290px 0px 290px;
 }
 
 p.prix {

@@ -1,0 +1,23 @@
+/*h3.etape {
+	text-transform: lowercase;
+	display: inline-block;
+}
+ 
+h3.etape:first-letter {
+	text-transform: capitalize;
+}
+ 
+h3.etape:hover {
+	text-decoration: underline;
+}*/
+
+
+h3.etape {
+    text-decoration: none;
+    background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+  }
+  
+  h3.etape:hover {
+    background-size: 100% 100%;
+  }
