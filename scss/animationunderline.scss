@@ -13,9 +13,10 @@ h3.etape:hover {
 
 
 h3.etape {
-    text-decoration: none;
-    background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .5s;
+    color:inherit;
+    background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size .3s;
   }
   
   h3.etape:hover {
