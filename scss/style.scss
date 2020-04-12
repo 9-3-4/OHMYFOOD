@@ -54,7 +54,6 @@ $couleur-menu:#0000;
 		bottom: 0;
 		left: 0;
 		right: 0;
-	
 	}
 }
 .logo{
@@ -88,7 +87,6 @@ section.containermenu1_2, section.containermenu3_4{
 	justify-content: space-around;
 	margin: 30px auto 30px auto;
 	height: 30em;
-		
 }
 .containermenu section div{
 	display: flex;
@@ -97,7 +95,6 @@ section.containermenu1_2, section.containermenu3_4{
 	justify-content: center;
 	width: 25em;
 	max-height: 60em;
-
 }
 h2{
 	font-size: 35px;
@@ -131,34 +128,25 @@ div.menu{
 	font-family: 'kaushan_scriptregular';
 }
 
-
-
-
 /*mobil*/
 @media only screen and (max-width:1023px){
 
 .containermenu section div{
 	width: 10em;
 	max-height: 21em;
-
 }
-
 h2{
 		font-size: 15px;
-		
 }
 section.containermenu1_2, section.containermenu3_4{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 10em;
-
 }
 div.menu{
 	height: 12em;
-
 }
-
 .logo{
 	font-size: 30px;
 }
@@ -171,7 +159,6 @@ img.note1{
 .foot a{
 	font-size: 18px;
 }
-
 }
 
 /*Style menu1*/
@@ -183,39 +170,29 @@ aside.titlemenu{
 	display: block;
 	width: auto;
 	margin: auto;
-	font-size: 42px;
+	font-size: 30px;
+	font-weight: bold;
 }
 section.containerprincipal{
 	background-color: #ffcdd2;
-	margin: 15px;
 	width: 45em;
-	height: 62em;
-	margin: auto;	
+	height: 60em;
+	margin: auto auto 85px auto;	
 }
-
-h2.note{
+h2.title{
 	font-family: $font-titre-menu1;
 	display: flex;
 	justify-content: center;
 	font-size: 45px;
-}
-aside.notemusic{
-	display: flex;
-	justify-content: center;
-	font-weight: 15px;
-	margin: 45px;
-	font-size: 20px;
-	
-	img.note2{
-		width: 30px;
-		margin-bottom: 20px;
-	}
+	margin-top: 0px;
 }
 img.note1{
-	margin-left: 19em ;
+	display: block;
+	padding-top: 35px;
+	margin: 0px auto;
 }
 h3.etape{
-	margin: 1em 0em 0em 17em;
+	margin: 0px 0px 0px 255px;
 	display: inline-block;	
 }
 p.prix{
@@ -229,11 +206,85 @@ main.description{
 	flex-direction: column;
 	margin: 10px 100px;	
 }
-
 .container1, .container2, .container3, .container4{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
+aside.notemusic{
+	display: flex;
+	justify-content: center;
+	margin: 45px;
+	
+	img.note2{
+		width: 30px;
+		margin-bottom: 20px;
+	}
+}
+span.note{
+	font-family: $font-titre-menu1;
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 22px;
+}
 
+/*mobil menu1*/
+@media only screen and (max-width:1023px){
+
+aside.titlemenu{
+	font-size: 15px;
+}
+section.containerprincipal{
+	width: 25em;
+	height: 40em;
+}
+h2.title{
+	font-size: 20px;
+}
+h3.etape{
+	margin: 0px 0px 0px 170px;
+	font-size: 15px;
+}
+.containerentree, .containerplat, .containerdessert{
+	margin: 5px 20px;
+}
+.containerentree p, .containerplat p, .containerdessert p{
+	font-size: 12px;
+}
+aside.notemusic{
+	margin: 20px;
+}
+img.note2{
+	width:20px
+}
+span.note{
+	font-size: 15px;
+}
+}
+/*Style Menu2*/
+$font-titre-menu2: croissant_oneregular;
+
+
+section.containerprincipal{
+	background-color: #ffebee;
+}
+h2.title{
+	font-family: $font-titre-menu2;
+	background-image: linear-gradient(to right, #D2691E 10%, #9370DB 90%, #8A2BE2);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+div.containerentree, h3.entree{
+	color:( #D2691E);
+    
+}
+div.containerplat, h3.plat{
+	color:( #9370DB);
+    
+}
+div.containerdessert, h3.dessert{
+	color:( #8A2BE2);
+    
+}
 

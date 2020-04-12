@@ -105,23 +105,11 @@ a.palette {
   color: #4CAF50;
 }
 
-/*h3.etape {
-	text-transform: lowercase;
-	display: inline-block;
-}
-
-h3.etape:first-letter {
-	text-transform: capitalize;
-}
-
-h3.etape:hover {
-	text-decoration: underline;
-}*/
 h3.etape {
   color: inherit;
   background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat;
   background-size: 0 100%;
-  transition: background-size 0.3s;
+  transition: background-size 0.4s;
 }
 
 h3.etape:hover {
@@ -295,42 +283,33 @@ aside.titlemenu {
   display: block;
   width: auto;
   margin: auto;
-  font-size: 42px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 section.containerprincipal {
   background-color: #ffcdd2;
-  margin: 15px;
   width: 45em;
-  height: 62em;
-  margin: auto;
+  height: 60em;
+  margin: auto auto 85px auto;
 }
 
-h2.note {
+h2.title {
   font-family: Devonshire;
   display: flex;
   justify-content: center;
   font-size: 45px;
-}
-
-aside.notemusic {
-  display: flex;
-  justify-content: center;
-  font-weight: 15px;
-  margin: 45px;
-  font-size: 20px;
-}
-aside.notemusic img.note2 {
-  width: 30px;
-  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 img.note1 {
-  margin-left: 19em;
+  display: block;
+  padding-top: 35px;
+  margin: 0px auto;
 }
 
 h3.etape {
-  margin: 1em 0em 0em 17em;
+  margin: 0px 0px 0px 255px;
   display: inline-block;
 }
 
@@ -352,6 +331,88 @@ main.description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+aside.notemusic {
+  display: flex;
+  justify-content: center;
+  margin: 45px;
+}
+aside.notemusic img.note2 {
+  width: 30px;
+  margin-bottom: 20px;
+}
+
+span.note {
+  font-family: Devonshire;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/*mobil menu1*/
+@media only screen and (max-width: 1023px) {
+  aside.titlemenu {
+    font-size: 15px;
+  }
+
+  section.containerprincipal {
+    width: 25em;
+    height: 40em;
+  }
+
+  h2.title {
+    font-size: 20px;
+  }
+
+  h3.etape {
+    margin: 0px 0px 0px 170px;
+    font-size: 15px;
+  }
+
+  .containerentree, .containerplat, .containerdessert {
+    margin: 5px 20px;
+  }
+
+  .containerentree p, .containerplat p, .containerdessert p {
+    font-size: 12px;
+  }
+
+  aside.notemusic {
+    margin: 20px;
+  }
+
+  img.note2 {
+    width: 20px;
+  }
+
+  span.note {
+    font-size: 15px;
+  }
+}
+/*Style Menu2*/
+section.containerprincipal {
+  background-color: #ffebee;
+}
+
+h2.title {
+  font-family: croissant_oneregular;
+  background-image: linear-gradient(to right, #D2691E 10%, #9370DB 90%, #8A2BE2);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+div.containerentree, h3.entree {
+  color: #D2691E;
+}
+
+div.containerplat, h3.plat {
+  color: #9370DB;
+}
+
+div.containerdessert, h3.dessert {
+  color: #8A2BE2;
 }
 
 /*# sourceMappingURL=style.css.map */
