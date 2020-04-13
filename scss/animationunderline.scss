@@ -1,10 +1,9 @@
 h3.etape {
     color:inherit;
-    background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat;
+    background: linear-gradient(to top, #673AB7 0%, #BDBDBD 10%, transparent 10.01%) no-repeat;
     background-size: 0 100%;
     transition: background-size .4s;
   }
-  
-  h3.etape:hover {
+h3.etape:hover {
     background-size: 100% 100%;
-  }
+}

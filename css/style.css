@@ -107,7 +107,7 @@ a.palette {
 
 h3.etape {
   color: inherit;
-  background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat;
+  background: linear-gradient(to top, #673AB7 0%, #BDBDBD 10%, transparent 10.01%) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.4s;
 }
@@ -294,7 +294,7 @@ section.containerprincipal {
   margin: auto auto 85px auto;
 }
 
-h2.title {
+h2.title.note {
   font-family: Devonshire;
   display: flex;
   justify-content: center;
@@ -309,7 +309,7 @@ img.note1 {
 }
 
 h3.etape {
-  margin: 0px 0px 0px 255px;
+  margin: 0px 0px 0px 310px;
   display: inline-block;
 }
 
@@ -361,7 +361,7 @@ span.note {
     height: 40em;
   }
 
-  h2.title {
+  h2.title.note {
     font-size: 20px;
   }
 
@@ -395,16 +395,20 @@ section.containerprincipal {
   background-color: #ffebee;
 }
 
-h2.title {
+h2.title.chic {
   font-family: croissant_oneregular;
-  background-image: linear-gradient(to right, #D2691E 10%, #9370DB 90%, #8A2BE2);
+  background-image: linear-gradient(to right, #FF8F00 8%, #9370DB 92%, #8A2BE2);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  margin-top: 0px;
 }
 
 div.containerentree, h3.entree {
-  color: #D2691E;
+  color: #FF8F00;
 }
 
 div.containerplat, h3.plat {
