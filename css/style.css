@@ -117,8 +117,8 @@ h3.etape:hover {
 }
 
 @font-face {
-  font-family: Monserrat;
-  src: url("../Font/Monserrat-Regular.ttf");
+  font-family: Montserrat;
+  src: url("../Font/Montserrat-Regular.ttf");
   font-family: Roboto;
   src: url("../Font/Roboto-Regular.ttf");
   font-family: Devonshire;
@@ -126,14 +126,12 @@ h3.etape:hover {
   font-family: Kalam;
   src: url("../Font/Kalam-Regular.ttf");
   font-family: croissant;
-  src: url("../Font/CroissantOne-regular.ttf");
+  src: url("../Font/CroissantOne-Regular.ttf");
   font-family: Dancing;
-  src: url("../Font/DancingScript-VariableFont_wght.ttf");
-  font-family: "kaushan_scriptregular";
-  src: url("../Font/kaushanscript-regular-webfont.woff2") format("woff2"), url("../Font/kaushanscript-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-family: "SegoePrint-Bold";
+  src: url("../Font/DancingScript-Regular.ttf");
+  font-family: kaushanScript;
+  src: url("../Font/kaushanScript-Regular.otf");
+  font-family: SegoePrint;
   src: url("../Font/SegoePrint-Bold.ttf");
 }
 .backgroundedcontent {
@@ -213,33 +211,36 @@ div.menu {
   max-height: 350px;
 }
 
-.containermenu1_2--note {
+.containermenu1_2--note.menu {
   background-color: #ffcdd2;
   font-family: Devonshire;
 }
-.containermenu1_2--note a {
-  font-family: "SegoePrint-Bold";
+.containermenu1_2--note.menu a {
+  font-family: SegoePrint;
 }
 
-.containermenu1_2--chic {
+.containermenu1_2--chic.menu {
   background-color: #ffebee;
   font-family: croissant_oneregular;
 }
 
-.containermenu3_4--delice {
+.containermenu3_4--delice.menu {
   background-color: #E0F7FA;
   font-family: Dancing;
 }
-.containermenu3_4--delice a {
-  font-family: "SegoePrint-Bold";
+.containermenu3_4--delice.menu a {
+  font-family: SegoePrint;
 }
 
-.containermenu3_4--palette {
+.containermenu3_4--palette.menu {
   background-color: #F9FBE7;
-  font-family: "kaushan_scriptregular";
 }
 
-/*mobil*/
+h2.palette {
+  font-family: kaushanScript;
+}
+
+/*mobil accueil*/
 @media only screen and (max-width: 1023px) {
   .containermenu section div {
     width: 10em;
