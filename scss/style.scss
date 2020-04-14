@@ -5,21 +5,21 @@
 
 @font-face {
     font-family: Montserrat;
-	src: url('../Font/Montserrat-Regular.ttf');
+	src: url("./Font/Montserrat-Regular.svg");
 	font-family: Roboto;
-	src: url('../Font/Roboto-Regular.ttf');
+	src: url("./Font/Roboto-Regular.ttf");
 	font-family: Devonshire;
-	src: url('../Font/Devonshire-Regular.ttf');
+	src: url("./Font/Devonshire-Regular.ttf");
 	font-family: Kalam;
-	src: url('../Font/Kalam-Regular.ttf');	
+	src: url("./Font/Kalam-Regular.ttf");	
 	font-family: croissant;
-	src: url('../Font/CroissantOne-Regular.ttf');
+	src: url("./Font/CroissantOne-Regular.ttf");
 	font-family: Dancing;
-	src: url('../Font/DancingScript-Regular.ttf');
+	src: url("./Font/DancingScript-Regular.ttf");
 	font-family: kaushanScript;
-    src:url('../Font/kaushanScript-Regular.otf');	
+    src:url("D:/Users/Sophie/Documents/Sassprojet/Sass/Font/kaushanScript-Regular.ttf");	
 	font-family: SegoePrint;
-  	src: url('../Font/SegoePrint-Bold.ttf');
+  	src: url("./Font/SegoePrint-Bold.ttf");
      
 }
 
@@ -122,7 +122,7 @@ div.menu{
 	
 }
 h2.palette{
-	font-family: kaushanScript;
+	font-family: "kaushanScript";
 }
 
 /*mobil accueil*/
@@ -189,8 +189,11 @@ img.note1{
 	margin: 0px auto;
 }
 h3.etape{
-	margin: 0px 0px 0px 310px;
 	display: inline-block;	
+}
+div.center{
+	display: flex;
+	justify-content: center;
 }
 p.prix{
 	font-weight: bolder;
