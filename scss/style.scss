@@ -3,25 +3,7 @@
 @import'animationscale';
 @import'animationunderline';
 
-@font-face {
-    font-family: Montserrat;
-	src: url("./Font/Montserrat-Regular.svg");
-	font-family: Roboto;
-	src: url("./Font/Roboto-Regular.ttf");
-	font-family: Devonshire;
-	src: url("./Font/Devonshire-Regular.ttf");
-	font-family: Kalam;
-	src: url("./Font/Kalam-Regular.ttf");	
-	font-family: croissant;
-	src: url("./Font/CroissantOne-Regular.ttf");
-	font-family: Dancing;
-	src: url("./Font/DancingScript-Regular.ttf");
-	font-family: kaushanScript;
-    src:url("D:/Users/Sophie/Documents/Sassprojet/Sass/Font/kaushanScript-Regular.ttf");	
-	font-family: SegoePrint;
-  	src: url("./Font/SegoePrint-Bold.ttf");
-     
-}
+
 
 $couleur-de-fond:#26A69A;
 $couleur-texte:#FFD54F;
@@ -29,13 +11,14 @@ $lien:none;
 $couleur-menu:#0000;
 
 .backgroundedcontent {
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
 	background-color:$couleur-de-fond;
 	
 	a, &.prochain{
 		text-decoration:$lien;
 		color:$couleur-texte;
 	}
+	
 	&.foot{
 		display: flex;
 		flex-direction: row;
@@ -43,7 +26,7 @@ $couleur-menu:#0000;
 		align-items: center;
 		height: 40px;
 		padding: 0px 10px;
-		font-size: 30px;
+		font-size: 15px;
 		position: fixed;
 		bottom: 0;
 		left: 0;
@@ -99,30 +82,35 @@ div.menu{
 }
 .containermenu1_2--note.menu{
 	background-color: #ffcdd2;
-	font-family: Devonshire;
+	font-family: 'Devonshire', cursive;
 
 	a{
-		font-family: SegoePrint;
+		font-family: 'Kalam', cursive;
 	}
 }
 .containermenu1_2--chic.menu{
 	background-color: #ffebee;
-	font-family: croissant_oneregular;
+	font-family: 'Croissant One', cursive;
+
+	a{
+		font-family:'Abril Fatface', cursive;
+	}
 }
 .containermenu3_4--delice.menu{
 	background-color: #E0F7FA;
-	font-family: Dancing;
+	font-family: 'Dancing Script', cursive;
 
 	a{
-		font-family: SegoePrint;
+		font-family: 'Kalam', cursive;
 	}
 }
 .containermenu3_4--palette.menu{
 	background-color: #F9FBE7;
-	
-}
-h2.palette{
-	font-family: "kaushanScript";
+	font-family: 'Kaushan Script', cursive;
+
+	a{
+		font-family:'Kalam', cursive;
+	}
 }
 
 /*mobil accueil*/
