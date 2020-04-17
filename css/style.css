@@ -105,15 +105,19 @@ a.palette {
   color: #4CAF50;
 }
 
-h3.etape {
+h2.etape {
   color: inherit;
-  background: linear-gradient(to top, #673AB7 0%, #BDBDBD 10%, transparent 10.01%) no-repeat;
+  background: linear-gradient(to top, #4DB6AC 0%, #FFF176 10%, transparent 10.01%) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.4s;
 }
 
-h3.etape:hover {
+h2.etape:hover {
   background-size: 100% 100%;
+}
+
+.body {
+  margin: 0px;
 }
 
 .backgroundedcontent {
@@ -180,12 +184,17 @@ section.containermenu1_2, section.containermenu3_4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 25em;
+  width: 28em;
   max-height: 60em;
 }
 
-h2 {
-  font-size: 35px;
+h2.note, h2.delice, h2.palette {
+  font-size: 40px;
+  padding-left: 3px;
+}
+
+h2.chic {
+  font-size: 30px;
 }
 
 div.menu {
@@ -228,12 +237,16 @@ div.menu {
 /*mobil accueil*/
 @media only screen and (max-width: 1023px) {
   .containermenu section div {
-    width: 10em;
-    max-height: 21em;
+    width: 12em;
+    max-height: 22em;
   }
 
-  h2 {
-    font-size: 15px;
+  h2.note, h2.delice, h2.palette {
+    font-size: 21px;
+  }
+
+  h2.chic {
+    font-size: 14px;
   }
 
   section.containermenu1_2, section.containermenu3_4 {
@@ -276,15 +289,15 @@ aside.titlemenu {
 section.containerprincipal {
   background-color: #ffcdd2;
   width: 45em;
-  height: 60em;
+  height: 66em;
   margin: auto auto 85px auto;
 }
 
-h2.title.note {
-  font-family: Devonshire;
+h1.title.note {
+  font-family: "Devonshire", cursive;
   display: flex;
   justify-content: center;
-  font-size: 45px;
+  font-size: 40px;
   margin-top: 0px;
 }
 
@@ -294,8 +307,10 @@ img.note1 {
   margin: 0px auto;
 }
 
-h3.etape {
+h2.etape {
   display: inline-block;
+  font-size: 20px;
+  margin-bottom: 0px;
 }
 
 div.center {
@@ -308,7 +323,7 @@ p.prix {
 }
 
 main.description {
-  font-family: Kalam;
+  font-family: "Kalam", cursive;
 }
 
 .containerentree, .containerplat, .containerdessert {
@@ -321,6 +336,7 @@ main.description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: #212121;
 }
 
 aside.notemusic {
@@ -334,50 +350,69 @@ aside.notemusic img.note2 {
 }
 
 span.note {
-  font-family: Devonshire;
+  font-family: "Devonshire", cursive;
   margin-left: 10px;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 /*mobil menu1*/
 @media only screen and (max-width: 1023px) {
   aside.titlemenu {
-    font-size: 15px;
+    display: none;
   }
 
   section.containerprincipal {
-    width: 25em;
-    height: 40em;
+    margin-top: 5px;
+    width: 20em;
+    height: auto;
   }
 
-  h2.title.note {
+  h1.title.note {
     font-size: 20px;
+    margin-bottom: 0px;
   }
 
-  h3.etape {
-    margin: 0px 0px 0px 170px;
+  h2.etape {
     font-size: 15px;
   }
 
   .containerentree, .containerplat, .containerdessert {
-    margin: 5px 20px;
+    margin: 0px 20px;
   }
 
-  .containerentree p, .containerplat p, .containerdessert p {
+  p.prix {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .container1, .container2, .container3, .container4 {
+    display: flex;
+    flex-direction: column;
     font-size: 12px;
   }
 
+  .container1 p, .container2 p, .container3 p, .container4 p {
+    margin-bottom: 0px;
+  }
+
   aside.notemusic {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
   }
 
   img.note2 {
     width: 20px;
+    margin-top: 10px;
   }
 
   span.note {
     font-size: 15px;
+    margin: 0px;
   }
 }
 /*Style Menu2*/
@@ -385,8 +420,8 @@ section.containerprincipal {
   background-color: #ffebee;
 }
 
-h2.title.chic {
-  font-family: croissant_oneregular;
+h1.title.chic {
+  font-family: "Croissant One", cursive;
   background-image: linear-gradient(to right, #FF8F00 8%, #9370DB 92%, #8A2BE2);
   color: transparent;
   -webkit-background-clip: text;
