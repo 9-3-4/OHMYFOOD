@@ -163,7 +163,7 @@ aside.titlemenu{
 	display: block;
 	width: auto;
 	margin: auto;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
 }
 section.containerprincipal{
@@ -196,7 +196,7 @@ div.center{
 p.prix{
 	font-weight: bolder;
 }
-main.description{
+main.description.note{
 	font-family: $font-texte-menu1;	
 }
 .containerentree, .containerplat, .containerdessert{
@@ -208,6 +208,9 @@ main.description{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	
+}
+.container1 p, .container2 p, .container3 p, .container4 p{
 	color: (#212121);
 }
 aside.notemusic{
@@ -279,9 +282,13 @@ span.note{
 }
 /*Style Menu2*/
 $font-titre-menu2: 'Croissant One', cursive;
+$font-texte-menu2: 'Abril Fatface', cursive;
 
 section.containerprincipal{
 	background-color: #ffebee;
+}
+main.description.chic{
+	font-size: $font-texte-menu2;	
 }
 h1.title.chic{
 	font-family: $font-titre-menu2;
@@ -294,16 +301,82 @@ h1.title.chic{
 	font-size: 45px;
 	margin-top: 0px;
 }
-div.containerentree, h3.entree{
-	color:( #FF8F00);
-    
+main.description{
+	font-size: $font-texte-menu2;
 }
-div.containerplat, h3.plat{
-	color:( #9370DB);
-    
+.containerentree.chic p, h2.etape.entree{
+	color:( #FF8F00); 
 }
-div.containerdessert, h3.dessert{
-	color:( #8A2BE2);
-    
+.containerplat.chic p, h2.etape.plat{
+	color:( #9370DB);  
+}
+.containerdessert.chic p, h2.etape.dessert{
+	color:( #8A2BE2);   
 }
 
+/*mobil menu2*/
+@media only screen and (max-width:1023px){
+
+h1.title.chic{
+	font-size: 20px;
+}
+}
+
+/*Style menu3*/
+$font-titre-menu3: 'Dancing Script', cursive;
+$font-texte-menu3: 'Kalam', cursive;
+
+section.containerprincipal{
+	background-color: #E0F7FA;
+}
+main.decription.delice{
+	font-size:$font-texte-menu3;
+}
+h1.title.delice{
+	font-family: $font-titre-menu3;
+	background-image: linear-gradient(to right, #0000CD 10%, #03A9F4 90%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+	display: flex;
+	justify-content: center;
+	font-size: 45px;
+	margin-top: 0px;
+}
+
+/*mobil menu3*/
+@media only screen and (max-width:1023px){
+	
+h1.title.delice{
+	font-size: 30px;
+}
+}
+
+/*style menu4*/
+$font-titre-menu4: 'Kaushan Script', cursive;
+$font-texte-menu4: 'Kalam', cursive;
+
+section.containerprincipal{
+	background-color: #F9FBE7;
+}
+main.description.palette{
+	font-size: $font-texte-menu4;
+}
+h1.title.palette{
+	font-family: $font-titre-menu4;
+    background-image: linear-gradient(to right, #4CAF50 10%, #CCFF90 90%);
+	color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+	display: flex;
+	justify-content: center;
+	font-size: 45px;
+	margin-top: 0px;
+}
+/*mobil menu4*/
+@media only screen and (max-width:1023px){
+	
+	h1.title.palette{
+		font-size: 30px;
+}
+}

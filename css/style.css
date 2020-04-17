@@ -282,7 +282,7 @@ aside.titlemenu {
   display: block;
   width: auto;
   margin: auto;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -322,7 +322,7 @@ p.prix {
   font-weight: bolder;
 }
 
-main.description {
+main.description.note {
   font-family: "Kalam", cursive;
 }
 
@@ -336,6 +336,9 @@ main.description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.container1 p, .container2 p, .container3 p, .container4 p {
   color: #212121;
 }
 
@@ -420,6 +423,10 @@ section.containerprincipal {
   background-color: #ffebee;
 }
 
+main.description.chic {
+  font-size: "Abril Fatface", cursive;
+}
+
 h1.title.chic {
   font-family: "Croissant One", cursive;
   background-image: linear-gradient(to right, #FF8F00 8%, #9370DB 92%, #8A2BE2);
@@ -432,16 +439,81 @@ h1.title.chic {
   margin-top: 0px;
 }
 
-div.containerentree, h3.entree {
+main.description {
+  font-size: "Abril Fatface", cursive;
+}
+
+.containerentree.chic p, h2.etape.entree {
   color: #FF8F00;
 }
 
-div.containerplat, h3.plat {
+.containerplat.chic p, h2.etape.plat {
   color: #9370DB;
 }
 
-div.containerdessert, h3.dessert {
+.containerdessert.chic p, h2.etape.dessert {
   color: #8A2BE2;
+}
+
+/*mobil menu2*/
+@media only screen and (max-width: 1023px) {
+  h1.title.chic {
+    font-size: 20px;
+  }
+}
+/*Style menu3*/
+section.containerprincipal {
+  background-color: #E0F7FA;
+}
+
+main.decription.delice {
+  font-size: "Kalam", cursive;
+}
+
+h1.title.delice {
+  font-family: "Dancing Script", cursive;
+  background-image: linear-gradient(to right, #0000CD 10%, #03A9F4 90%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  margin-top: 0px;
+}
+
+/*mobil menu3*/
+@media only screen and (max-width: 1023px) {
+  h1.title.delice {
+    font-size: 30px;
+  }
+}
+/*style menu4*/
+section.containerprincipal {
+  background-color: #F9FBE7;
+}
+
+main.description.palette {
+  font-size: "Kalam", cursive;
+}
+
+h1.title.palette {
+  font-family: "Kaushan Script", cursive;
+  background-image: linear-gradient(to right, #4CAF50 10%, #CCFF90 90%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  margin-top: 0px;
+}
+
+/*mobil menu4*/
+@media only screen and (max-width: 1023px) {
+  h1.title.palette {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
