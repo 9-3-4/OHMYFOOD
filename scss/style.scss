@@ -166,7 +166,7 @@ aside.titlemenu{
 	font-size: 25px;
 	font-weight: bold;
 }
-section.containerprincipal{
+section.containerprincipal.note{
 	background-color: #ffcdd2;
 	width: 45em;
 	height: 66em;
@@ -236,7 +236,7 @@ span.note{
 aside.titlemenu{
 	display: none;
 }
-section.containerprincipal{
+section.containerprincipal .note{
 	margin-top: 5px;
 	width: 20em;
 	height: auto;
@@ -284,8 +284,11 @@ span.note{
 $font-titre-menu2: 'Croissant One', cursive;
 $font-texte-menu2: 'Abril Fatface', cursive;
 
-section.containerprincipal{
+section.containerprincipal.chic{
 	background-color: #ffebee;
+	width: 45em;
+	height: 50em;
+	margin: auto auto 85px auto;
 }
 main.description.chic{
 	font-size: $font-texte-menu2;	
@@ -298,11 +301,9 @@ h1.title.chic{
 	background-clip: text;
 	display: flex;
 	justify-content: center;
-	font-size: 45px;
+	font-size: 25px;
 	margin-top: 0px;
-}
-main.description{
-	font-size: $font-texte-menu2;
+	padding-top: 70px;
 }
 .containerentree.chic p, h2.etape.entree{
 	color:( #FF8F00); 
@@ -326,8 +327,11 @@ h1.title.chic{
 $font-titre-menu3: 'Dancing Script', cursive;
 $font-texte-menu3: 'Kalam', cursive;
 
-section.containerprincipal{
+section.containerprincipal.delice{
 	background-color: #E0F7FA;
+	width: 45em;
+	height: 66em;
+	margin: auto auto 85px auto;
 }
 main.decription.delice{
 	font-size:$font-texte-menu3;
@@ -340,8 +344,9 @@ h1.title.delice{
     background-clip: text;
 	display: flex;
 	justify-content: center;
-	font-size: 45px;
+	font-size: 50px;
 	margin-top: 0px;
+	padding-top: 70px;
 }
 
 /*mobil menu3*/
@@ -356,8 +361,11 @@ h1.title.delice{
 $font-titre-menu4: 'Kaushan Script', cursive;
 $font-texte-menu4: 'Kalam', cursive;
 
-section.containerprincipal{
+section.containerprincipal.palette{
 	background-color: #F9FBE7;
+	width: 45em;
+	height: 66em;
+	margin: auto auto 85px auto;
 }
 main.description.palette{
 	font-size: $font-texte-menu4;
@@ -370,8 +378,9 @@ h1.title.palette{
     background-clip: text;
 	display: flex;
 	justify-content: center;
-	font-size: 45px;
+	font-size: 50px;
 	margin-top: 0px;
+	padding-top: 70px;
 }
 /*mobil menu4*/
 @media only screen and (max-width:1023px){

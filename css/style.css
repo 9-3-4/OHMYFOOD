@@ -286,7 +286,7 @@ aside.titlemenu {
   font-weight: bold;
 }
 
-section.containerprincipal {
+section.containerprincipal.note {
   background-color: #ffcdd2;
   width: 45em;
   height: 66em;
@@ -365,7 +365,7 @@ span.note {
     display: none;
   }
 
-  section.containerprincipal {
+  section.containerprincipal .note {
     margin-top: 5px;
     width: 20em;
     height: auto;
@@ -419,8 +419,11 @@ span.note {
   }
 }
 /*Style Menu2*/
-section.containerprincipal {
+section.containerprincipal.chic {
   background-color: #ffebee;
+  width: 45em;
+  height: 50em;
+  margin: auto auto 85px auto;
 }
 
 main.description.chic {
@@ -435,12 +438,9 @@ h1.title.chic {
   background-clip: text;
   display: flex;
   justify-content: center;
-  font-size: 45px;
+  font-size: 25px;
   margin-top: 0px;
-}
-
-main.description {
-  font-size: "Abril Fatface", cursive;
+  padding-top: 70px;
 }
 
 .containerentree.chic p, h2.etape.entree {
@@ -462,8 +462,11 @@ main.description {
   }
 }
 /*Style menu3*/
-section.containerprincipal {
+section.containerprincipal.delice {
   background-color: #E0F7FA;
+  width: 45em;
+  height: 66em;
+  margin: auto auto 85px auto;
 }
 
 main.decription.delice {
@@ -478,8 +481,9 @@ h1.title.delice {
   background-clip: text;
   display: flex;
   justify-content: center;
-  font-size: 45px;
+  font-size: 50px;
   margin-top: 0px;
+  padding-top: 70px;
 }
 
 /*mobil menu3*/
@@ -489,8 +493,11 @@ h1.title.delice {
   }
 }
 /*style menu4*/
-section.containerprincipal {
+section.containerprincipal.palette {
   background-color: #F9FBE7;
+  width: 45em;
+  height: 66em;
+  margin: auto auto 85px auto;
 }
 
 main.description.palette {
@@ -505,8 +512,9 @@ h1.title.palette {
   background-clip: text;
   display: flex;
   justify-content: center;
-  font-size: 45px;
+  font-size: 50px;
   margin-top: 0px;
+  padding-top: 70px;
 }
 
 /*mobil menu4*/
