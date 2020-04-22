@@ -3,31 +3,34 @@
     opacity: 0.7;
     transition: transform 1s ;
 }
+h2.note, a.note{
+    color: rgb(61,19,25);
+}
 h2.chic{ 
-    background-image: linear-gradient(to right, #D2691E 10%, #9370DB 90%, #8A2BE2);
+    background-image: linear-gradient(to right, rgb(190,105,19), rgb(155,92,142) , rgb(99,67,197));
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 a.chic{
-    color: #D2691E;
+    color: rgb(190,105,19);
     font-weight: bold;
 }
 h2.delice{
-    background-image: linear-gradient(to right, #0000CD 10%, #03A9F4 90%);
+    background-image: linear-gradient(to right,rgb(2,41,221) , rgb(8,137,251));
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 a.delice{
-    color: #03A9F4;
+    color:rgb(8,137,251) ;
 }
 h2.palette{
-    background-image: linear-gradient(to right, #4CAF50 10%, #CCFF90 90%);
+    background-image: linear-gradient(to right, rgb(67,151,61), rgb(190,255,127));
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 a.palette{
-    color: #4CAF50;
+    color:rgb(67,151,61);
 }

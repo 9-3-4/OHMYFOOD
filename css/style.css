@@ -71,38 +71,42 @@
   transition: transform 1s;
 }
 
+h2.note, a.note {
+  color: #3d1319;
+}
+
 h2.chic {
-  background-image: linear-gradient(to right, #D2691E 10%, #9370DB 90%, #8A2BE2);
+  background-image: linear-gradient(to right, #be6913, #9b5c8e, #6343c5);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 a.chic {
-  color: #D2691E;
+  color: #be6913;
   font-weight: bold;
 }
 
 h2.delice {
-  background-image: linear-gradient(to right, #0000CD 10%, #03A9F4 90%);
+  background-image: linear-gradient(to right, #0229dd, #0889fb);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 a.delice {
-  color: #03A9F4;
+  color: #0889fb;
 }
 
 h2.palette {
-  background-image: linear-gradient(to right, #4CAF50 10%, #CCFF90 90%);
+  background-image: linear-gradient(to right, #43973d, #beff7f);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 a.palette {
-  color: #4CAF50;
+  color: #43973d;
 }
 
 h2.etape {
@@ -122,20 +126,21 @@ body {
 
 .backgroundedcontent {
   font-family: "Montserrat", sans-serif;
-  background-color: #26A69A;
+  background-color: #579c87;
+  font-weight: bold;
 }
 .backgroundedcontent a, .backgroundedcontent.prochain {
   text-decoration: none;
-  color: #FFD54F;
+  color: #fdcb46;
 }
 .backgroundedcontent.foot {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
+  height: 60px;
   padding: 0px 10px;
-  font-size: 15px;
+  font-size: 20px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -146,7 +151,7 @@ body {
   text-align: center;
   display: block;
   width: auto;
-  margin: auto;
+  /*margin-top: 0px;*/
   padding: 15px 0px;
   font-size: 50px;
 }
@@ -163,7 +168,7 @@ img.note1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px auto 50px auto;
+  margin: 15px auto 80px auto;
 }
 
 .titre--lien {
@@ -203,7 +208,7 @@ div.menu {
 }
 
 .containermenu1_2--note.menu {
-  background-color: #ffcdd2;
+  background-color: #fcdfdb;
   font-family: "Devonshire", cursive;
 }
 .containermenu1_2--note.menu a {
@@ -211,7 +216,7 @@ div.menu {
 }
 
 .containermenu1_2--chic.menu {
-  background-color: #ffebee;
+  background-color: #fff5fe;
   font-family: "Croissant One", cursive;
 }
 .containermenu1_2--chic.menu a {
@@ -219,7 +224,7 @@ div.menu {
 }
 
 .containermenu3_4--delice.menu {
-  background-color: #E0F7FA;
+  background-color: #edefef;
   font-family: "Dancing Script", cursive;
 }
 .containermenu3_4--delice.menu a {
@@ -227,7 +232,7 @@ div.menu {
 }
 
 .containermenu3_4--palette.menu {
-  background-color: #F9FBE7;
+  background-color: #fdfffd;
   font-family: "Kaushan Script", cursive;
 }
 .containermenu3_4--palette.menu a {
@@ -277,6 +282,47 @@ div.menu {
   }
 }
 /*Style menu1*/
+.foot__lien--animation:hover {
+  display: block;
+  animation: wiggle 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
 aside.titlemenu {
   text-align: center;
   display: block;
@@ -287,7 +333,7 @@ aside.titlemenu {
 }
 
 section.containerprincipal.note {
-  background-color: #ffcdd2;
+  background-color: #fcdfdb;
   width: 45em;
   height: 66em;
   margin: auto auto 85px auto;
@@ -316,8 +362,6 @@ h2.etape {
 div.center {
   display: flex;
   justify-content: center;
-  /*background: url(Images/ligne1note.svg) no-repeat left;
-  background: url(Images/Ligne2note.svg) no-repeat right;*/
 }
 
 p.prix {
@@ -422,7 +466,7 @@ span.note {
 }
 /*Style Menu2*/
 section.containerprincipal.chic {
-  background-color: #ffebee;
+  background-color: #fff5fe;
   width: 45em;
   height: 66em;
   margin: auto auto 85px auto;
@@ -434,7 +478,7 @@ main.description.chic {
 
 h1.title.chic {
   font-family: "Croissant One", cursive;
-  background-image: linear-gradient(to right, #FF8F00 8%, #9370DB 92%, #8A2BE2);
+  background-image: linear-gradient(to right, #be6913 10%, #9b5c8e 90%, #6343c5);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -446,15 +490,15 @@ h1.title.chic {
 }
 
 .containerentree.chic p, h2.etape.entree {
-  color: #FF8F00;
+  color: #be6913;
 }
 
 .containerplat.chic p, h2.etape.plat {
-  color: #9370DB;
+  color: #9b5c8e;
 }
 
 .containerdessert.chic p, h2.etape.dessert {
-  color: #8A2BE2;
+  color: #6343c5;
 }
 
 /*mobil menu2*/
@@ -471,7 +515,7 @@ h1.title.chic {
 }
 /*Style menu3*/
 section.containerprincipal.delice {
-  background-color: #E0F7FA;
+  background-color: #edefef;
   width: 45em;
   height: 66em;
   margin: auto auto 85px auto;
@@ -508,7 +552,7 @@ h1.title.delice {
 }
 /*style menu4*/
 section.containerprincipal.palette {
-  background-color: #F9FBE7;
+  background-color: #fdfffd;
   width: 45em;
   height: 66em;
   margin: auto auto 85px auto;
@@ -560,72 +604,9 @@ h2.paragraphs {
   text-decoration: underline;
 }
 
-article {
-  margin: 10px;
-}
-
-/*contact*/
-#min_body {
-  background: #fff;
-  font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
-  font-size: small;
-  margin: 8px 0 16px;
-  text-align: center;
-}
-
-ul {
-  list-style: none;
-}
-
-#form_container {
-  background: #ffff99;
-  margin: 0 auto;
-  text-align: left;
-  width: 30em;
-}
-
-h1.formulaire {
-  display: flex;
-  justify-content: center;
-}
-
-#top {
-  display: block;
-  height: 10px;
-  margin: 10px auto 0;
-  width: 650px;
-}
-
-#footer {
-  width: 640px;
-  clear: both;
-  color: #999999;
-  text-align: center;
-  width: 640px;
-  padding-bottom: 15px;
-  font-size: 85%;
-}
-
-#bottom {
-  display: block;
-  height: 10px;
-  margin: 0 auto;
-  width: 650px;
-}
-
-form.appnitro {
-  margin-left: 0px;
-  padding-bottom: 5px;
-}
-
-/*mobil contact*/
-@media only screen and (max-width: 1023px) {
-  #form_container {
-    background: #ffff99;
-    margin: 0 auto;
-    text-align: left;
-    width: 22em;
-  }
+article.mentions {
+  margin: 30px;
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
