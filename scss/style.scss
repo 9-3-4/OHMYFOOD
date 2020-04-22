@@ -42,9 +42,11 @@ body{
 	text-align: center;
 	display: block;
 	width: auto;
-	/*margin-top: 0px;*/
 	padding: 15px 0px;
 	font-size: 50px;
+}
+.backgroundedcontent h1{
+	margin-top: 0px;
 }
 img.note1{
 	width: 60px;
@@ -78,12 +80,17 @@ section.containermenu1_2, section.containermenu3_4{
 	width: 28em;
 	max-height: 60em;
 }
+span.contenu{
+	display: inline-block;
+	
+}
 h2.note, h2.delice, h2.palette{
 	font-size: 40px;
 	padding-left: 3px;
 }
-h2.chic{
-	font-size: 30px;
+p{
+	display: flex;
+	justify-content: center;
 }
 div.menu{
 	box-shadow:0px 0px 22px 4px #E0E0E0;
@@ -93,32 +100,59 @@ div.menu{
 	background-color: $background-menu1;
 	font-family: 'Devonshire', cursive;
 
-	a{
+	p{
 		font-family: 'Kalam', cursive;
+		color: rgb(61,19,25);
+	}
+	h2.note{
+		color: rgb(61,19,25);
 	}
 }
 .containermenu1_2--chic.menu{
 	background-color: $background-menu2;
 	font-family: 'Croissant One', cursive;
 
-	a{
+	p{
 		font-family:'Abril Fatface', cursive;
+		color: rgb(190,105,19);
+    	font-weight: bold;
+	}
+	h2.chic{ 
+		background-image: linear-gradient(to right, rgb(190,105,19), rgb(155,92,142) , rgb(99,67,197));
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		font-size: 30px;
 	}
 }
 .containermenu3_4--delice.menu{
 	background-color: $background-menu3;
 	font-family: 'Dancing Script', cursive;
 
-	a{
+	p{
 		font-family: 'Kalam', cursive;
+		color:rgb(8,137,251) ;
+	}
+	h2.delice{
+		background-image: linear-gradient(to right,rgb(2,41,221) , rgb(8,137,251));
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
 	}
 }
 .containermenu3_4--palette.menu{
 	background-color: $background-menu4;
 	font-family: 'Kaushan Script', cursive;
 
-	a{
+	p{
 		font-family:'Kalam', cursive;
+		color:rgb(67,151,61);
+	}
+	h2.palette{
+		background-image: linear-gradient(to right, rgb(67,151,61), rgb(190,255,127));
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
 	}
 }
 
@@ -159,10 +193,9 @@ img.note1{
 }
 
 /*Style menu1*/
-@import'animationwiggle';
+
 $font-titre-menu1:'Devonshire', cursive;
 $font-texte-menu1:'Kalam', cursive;
-
 
 aside.titlemenu{
 	text-align: center;
@@ -199,7 +232,6 @@ div.center{
 	display: flex;
 	justify-content: center;
 }
-
 p.prix{
 	font-weight: bolder;
 }
@@ -215,7 +247,6 @@ main.description.note{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	
 }
 .container1 p, .container2 p, .container3 p, .container4 p{
 	color: (#212121);
@@ -290,7 +321,6 @@ span.note{
 /*Style Menu2*/
 $font-titre-menu2: 'Croissant One', cursive;
 $font-texte-menu2: 'Abril Fatface', cursive;
-
 
 section.containerprincipal.chic{
 	background-color: $background-menu2;
@@ -380,7 +410,6 @@ h1.title.delice{
 $font-titre-menu4: 'Kaushan Script', cursive;
 $font-texte-menu4: 'Kalam', cursive;
 
-
 section.containerprincipal.palette{
 	background-color: $background-menu4;
 	width: 45em;
@@ -415,11 +444,11 @@ h1.title.palette{
 }
 }
 
-/*mention*/
+/*mentions legales*/
 p.text{
 	text-align: justify;
 }
-h1.mentionlegales{
+h1.mentionslegales{
 	font-size: bold;
 	text-decoration: underline overline #FF3028;
 	display: flex;

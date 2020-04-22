@@ -71,44 +71,6 @@
   transition: transform 1s;
 }
 
-h2.note, a.note {
-  color: #3d1319;
-}
-
-h2.chic {
-  background-image: linear-gradient(to right, #be6913, #9b5c8e, #6343c5);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-a.chic {
-  color: #be6913;
-  font-weight: bold;
-}
-
-h2.delice {
-  background-image: linear-gradient(to right, #0229dd, #0889fb);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-a.delice {
-  color: #0889fb;
-}
-
-h2.palette {
-  background-image: linear-gradient(to right, #43973d, #beff7f);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-a.palette {
-  color: #43973d;
-}
-
 h2.etape {
   color: inherit;
   background: linear-gradient(to top, #4DB6AC 0%, #FFF176 10%, transparent 10.01%) no-repeat;
@@ -151,9 +113,12 @@ body {
   text-align: center;
   display: block;
   width: auto;
-  /*margin-top: 0px;*/
   padding: 15px 0px;
   font-size: 50px;
+}
+
+.backgroundedcontent h1 {
+  margin-top: 0px;
 }
 
 img.note1 {
@@ -193,13 +158,18 @@ section.containermenu1_2, section.containermenu3_4 {
   max-height: 60em;
 }
 
+span.contenu {
+  display: inline-block;
+}
+
 h2.note, h2.delice, h2.palette {
   font-size: 40px;
   padding-left: 3px;
 }
 
-h2.chic {
-  font-size: 30px;
+p {
+  display: flex;
+  justify-content: center;
 }
 
 div.menu {
@@ -211,32 +181,59 @@ div.menu {
   background-color: #fcdfdb;
   font-family: "Devonshire", cursive;
 }
-.containermenu1_2--note.menu a {
+.containermenu1_2--note.menu p {
   font-family: "Kalam", cursive;
+  color: #3d1319;
+}
+.containermenu1_2--note.menu h2.note {
+  color: #3d1319;
 }
 
 .containermenu1_2--chic.menu {
   background-color: #fff5fe;
   font-family: "Croissant One", cursive;
 }
-.containermenu1_2--chic.menu a {
+.containermenu1_2--chic.menu p {
   font-family: "Abril Fatface", cursive;
+  color: #be6913;
+  font-weight: bold;
+}
+.containermenu1_2--chic.menu h2.chic {
+  background-image: linear-gradient(to right, #be6913, #9b5c8e, #6343c5);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 30px;
 }
 
 .containermenu3_4--delice.menu {
   background-color: #edefef;
   font-family: "Dancing Script", cursive;
 }
-.containermenu3_4--delice.menu a {
+.containermenu3_4--delice.menu p {
   font-family: "Kalam", cursive;
+  color: #0889fb;
+}
+.containermenu3_4--delice.menu h2.delice {
+  background-image: linear-gradient(to right, #0229dd, #0889fb);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .containermenu3_4--palette.menu {
   background-color: #fdfffd;
   font-family: "Kaushan Script", cursive;
 }
-.containermenu3_4--palette.menu a {
+.containermenu3_4--palette.menu p {
   font-family: "Kalam", cursive;
+  color: #43973d;
+}
+.containermenu3_4--palette.menu h2.palette {
+  background-image: linear-gradient(to right, #43973d, #beff7f);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /*mobil accueil*/
@@ -282,47 +279,6 @@ div.menu {
   }
 }
 /*Style menu1*/
-.foot__lien--animation:hover {
-  display: block;
-  animation: wiggle 0.5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes wiggle {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
 aside.titlemenu {
   text-align: center;
   display: block;
@@ -587,12 +543,12 @@ h1.title.palette {
     font-size: 30px;
   }
 }
-/*mention*/
+/*mentions legales*/
 p.text {
   text-align: justify;
 }
 
-h1.mentionlegales {
+h1.mentionslegales {
   font-size: bold;
   text-decoration: underline overline #FF3028;
   display: flex;
