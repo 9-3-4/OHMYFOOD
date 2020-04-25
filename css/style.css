@@ -292,7 +292,7 @@ aside.titlemenu {
   font-weight: bold;
 }
 
-section.containerprincipal.note {
+main.containerprincipal.note {
   background-color: #fcdfdb;
   width: 45em;
   height: 66em;
@@ -328,7 +328,7 @@ p.prix {
   font-weight: bolder;
 }
 
-main.description.note {
+section.description.note {
   font-family: "Kalam", cursive;
 }
 
@@ -342,10 +342,6 @@ main.description.note {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.container1 p, .container2 p, .container3 p, .container4 p {
-  color: #212121;
 }
 
 aside.notemusic {
@@ -371,7 +367,7 @@ span.note {
     display: none;
   }
 
-  section.containerprincipal.note {
+  main.containerprincipal.note {
     margin-top: 5px;
     width: 20em;
     height: auto;
@@ -388,21 +384,24 @@ span.note {
 
   .containerentree, .containerplat, .containerdessert {
     margin: 0px 20px;
-  }
-
-  p.prix {
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-  }
-
-  .container1, .container2, .container3, .container4 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     font-size: 12px;
   }
 
-  .container1 p, .container2 p, .container3 p, .container4 p {
+  div.container1, div.container2, div.container3, div.container4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  p.prix {
+    margin-top: 0px;
+  }
+
+  p.entree, p.plat, p.dessert {
     margin-bottom: 0px;
   }
 
@@ -425,14 +424,14 @@ span.note {
   }
 }
 /*Style Menu2*/
-section.containerprincipal.chic {
+main.containerprincipal.chic {
   background-color: #fff5fe;
   width: 45em;
   height: 66em;
   margin: auto auto 85px auto;
 }
 
-main.description.chic {
+section.description.chic {
   font-size: "Abril Fatface", cursive;
 }
 
@@ -463,7 +462,16 @@ h1.title.chic {
 
 /*mobil menu2*/
 @media only screen and (max-width: 1023px) {
-  section.containerprincipal.chic {
+  .containerentree.chic, .containerplat.chic, .containerdessert.chic {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  main.containerprincipal.chic {
     margin-top: 5px;
     width: 20em;
     height: auto;
@@ -471,17 +479,18 @@ h1.title.chic {
 
   h1.title.chic {
     font-size: 15px;
+    padding: 15px;
   }
 }
 /*Style menu3*/
-section.containerprincipal.delice {
+main.containerprincipal.delice {
   background-color: #edefef;
   width: 45em;
   height: 66em;
   margin: auto auto 85px auto;
 }
 
-main.decription.delice {
+section.decription.delice {
   font-size: "Kalam", cursive;
 }
 
@@ -500,7 +509,24 @@ h1.title.delice {
 
 /*mobil menu3*/
 @media only screen and (max-width: 1023px) {
-  section.containerprincipal.delice {
+  .containerentree, .containerplat, .containerdessert {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  p.prix {
+    margin-top: 0px;
+  }
+
+  p.entree, p.plat, p.dessert {
+    margin-bottom: 0px;
+  }
+
+  main.containerprincipal.delice {
     margin-top: 5px;
     width: 20em;
     height: auto;
@@ -508,17 +534,18 @@ h1.title.delice {
 
   h1.title.delice {
     font-size: 30px;
+    padding: 15px;
   }
 }
 /*style menu4*/
-section.containerprincipal.palette {
+main.containerprincipal.palette {
   background-color: #fdfffd;
   width: 45em;
   height: 66em;
   margin: auto auto 85px auto;
 }
 
-main.description.palette {
+section.description.palette {
   font-size: "Kalam", cursive;
 }
 
@@ -537,7 +564,16 @@ h1.title.palette {
 
 /*mobil menu4*/
 @media only screen and (max-width: 1023px) {
-  section.containerprincipal.palette {
+  .containerentree, .containerplat, .containerdessert {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  main.containerprincipal.palette {
     margin-top: 5px;
     width: 20em;
     height: auto;
@@ -545,6 +581,7 @@ h1.title.palette {
 
   h1.title.palette {
     font-size: 30px;
+    padding: 15px;
   }
 }
 /*mentions legales*/

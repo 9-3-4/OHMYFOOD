@@ -196,7 +196,6 @@ img.note1{
 }
 
 /*Style menu1*/
-
 $font-titre-menu1:'Devonshire', cursive;
 $font-texte-menu1:'Kalam', cursive;
 
@@ -208,7 +207,7 @@ aside.titlemenu{
 	font-size: 25px;
 	font-weight: bold;
 }
-section.containerprincipal.note{
+main.containerprincipal.note{
 	background-color: $background-menu1;
 	width: 45em;
 	height: 66em;
@@ -238,7 +237,7 @@ div.center{
 p.prix{
 	font-weight: bolder;
 }
-main.description.note{
+section.description.note{
 	font-family: $font-texte-menu1;	
 }
 .containerentree, .containerplat, .containerdessert{
@@ -250,9 +249,6 @@ main.description.note{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-}
-.container1 p, .container2 p, .container3 p, .container4 p{
-	color: (#212121);
 }
 aside.notemusic{
 	display: flex;
@@ -277,7 +273,7 @@ span.note{
 aside.titlemenu{
 	display: none;
 }
-section.containerprincipal.note{
+main.containerprincipal.note{
 	margin-top: 5px;
 	width: 20em;
 	height: auto;
@@ -291,18 +287,21 @@ h2.etape{
 }
 .containerentree, .containerplat, .containerdessert{
 	margin: 0px 20px;
-}
-p.prix{
-	display: flex;
-	justify-content: center;
-	margin: 0px;
-}
-.container1, .container2, .container3, .container4{
 	display:flex;
 	flex-direction: column;
+	align-items: center;
+	text-align: center;
 	font-size: 12px;
 }
-.container1 p, .container2 p, .container3 p, .container4 p{
+div.container1,div.container2,div.container3, div.container4{
+	display: flex;
+	flex-direction: column;
+	margin: 0px;	
+}
+p.prix{
+	margin-top: 0px;
+}
+p.entree, p.plat, p.dessert{
 	margin-bottom: 0px;
 }
 aside.notemusic{
@@ -325,13 +324,13 @@ span.note{
 $font-titre-menu2: 'Croissant One', cursive;
 $font-texte-menu2: 'Abril Fatface', cursive;
 
-section.containerprincipal.chic{
+main.containerprincipal.chic{
 	background-color: $background-menu2;
 	width: 45em;
 	height: 66em;
 	margin: auto auto 85px auto;
 }
-main.description.chic{
+section.description.chic{
 	font-size: $font-texte-menu2;	
 }
 h1.title.chic{
@@ -359,14 +358,22 @@ h1.title.chic{
 /*mobil menu2*/
 @media only screen and (max-width:1023px){
 
-
-section.containerprincipal.chic{
+.containerentree.chic, .containerplat.chic, .containerdessert.chic{
+	margin: 0px 20px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-size: 12px;
+}
+main.containerprincipal.chic{
 	margin-top: 5px;
 	width: 20em;
 	height: auto;
 }
 h1.title.chic{
 	font-size: 15px;
+	padding: 15px;
 }
 }
 
@@ -374,14 +381,13 @@ h1.title.chic{
 $font-titre-menu3: 'Dancing Script', cursive;
 $font-texte-menu3: 'Kalam', cursive;
 
-
-section.containerprincipal.delice{
+main.containerprincipal.delice{
 	background-color: $background-menu3;
 	width: 45em;
 	height: 66em;
 	margin: auto auto 85px auto;
 }
-main.decription.delice{
+section.decription.delice{
 	font-size:$font-texte-menu3;
 }
 h1.title.delice{
@@ -400,13 +406,28 @@ h1.title.delice{
 /*mobil menu3*/
 @media only screen and (max-width:1023px){
 
-section.containerprincipal.delice{
+	.containerentree, .containerplat, .containerdessert{
+		margin: 0px 20px;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		font-size: 12px;
+	}
+	p.prix{
+		margin-top: 0px;
+	}
+	p.entree, p.plat, p.dessert{
+		margin-bottom: 0px;
+	}
+main.containerprincipal.delice{
 		margin-top: 5px;
 		width: 20em;
 		height: auto;
 }
 h1.title.delice{
 	font-size: 30px;
+	padding: 15px;
 }
 }
 
@@ -414,13 +435,13 @@ h1.title.delice{
 $font-titre-menu4: 'Kaushan Script', cursive;
 $font-texte-menu4: 'Kalam', cursive;
 
-section.containerprincipal.palette{
+main.containerprincipal.palette{
 	background-color: $background-menu4;
 	width: 45em;
 	height: 66em;
 	margin: auto auto 85px auto;
 }
-main.description.palette{
+section.description.palette{
 	font-size: $font-texte-menu4;
 }
 h1.title.palette{
@@ -438,13 +459,22 @@ h1.title.palette{
 /*mobil menu4*/
 @media only screen and (max-width:1023px){
 
-section.containerprincipal.palette{
+.containerentree, .containerplat, .containerdessert{
+		margin: 0px 20px;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		font-size: 12px;
+}
+main.containerprincipal.palette{
 	margin-top: 5px;
 	width: 20em;
 	height: auto;
 }
 h1.title.palette{
 	font-size: 30px;
+	padding: 15px;
 }
 }
 
