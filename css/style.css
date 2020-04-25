@@ -313,10 +313,27 @@ img.note1 {
   margin: 0px auto;
 }
 
+img.trait1note, img.trait2note {
+  height: 6px;
+  width: auto;
+}
+
 h2.etape {
   display: inline-block;
   font-size: 20px;
-  margin-bottom: 0px;
+  margin: 0px;
+}
+
+img.trait1note.entree, img.trait2note.entree {
+  padding: 15px 56px 0px 56px;
+}
+
+img.trait1note.plat, img.trait2note.plat {
+  padding: 15px 30px 0px 30px;
+}
+
+img.trait1note.dessert, img.trait2note.dessert {
+  padding: 15px 18px 0px 18px;
 }
 
 div.center {
@@ -363,6 +380,10 @@ span.note {
 
 /*mobil menu1*/
 @media only screen and (max-width: 1023px) {
+  img.trait1note, img.trait2note {
+    height: 2px;
+  }
+
   aside.titlemenu {
     display: none;
   }
@@ -375,7 +396,11 @@ span.note {
 
   h1.title.note {
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
+  }
+
+  img.note1 {
+    padding: 15px;
   }
 
   h2.etape {
@@ -424,6 +449,29 @@ span.note {
   }
 }
 /*Style Menu2*/
+img.trait1chic, img.trait2chic, img.trait3chic, img.trait4chic, img.trait5chic, img.trait6chic {
+  height: 10px;
+  width: auto;
+}
+
+h2.etape {
+  display: inline-block;
+  font-size: 10px;
+  margin: 0px;
+}
+
+img.trait1chic.entree, img.trait2chic.entree {
+  padding: 10px 20px 0px 20px;
+}
+
+img.trait3chic.plat, img.trait4chic.plat {
+  padding: 15px 30px 0px 30px;
+}
+
+img.trait5chic.dessert, img.trait6chic.dessert {
+  padding: 10px 18px 0px 18px;
+}
+
 main.containerprincipal.chic {
   background-color: #fff5fe;
   width: 45em;
@@ -432,7 +480,8 @@ main.containerprincipal.chic {
 }
 
 section.description.chic {
-  font-size: "Abril Fatface", cursive;
+  font-family: "Abril Fatface", cursive;
+  font-weight: lighter;
 }
 
 h1.title.chic {
@@ -448,20 +497,28 @@ h1.title.chic {
   padding-top: 70px;
 }
 
-.containerentree.chic p, h2.etape.entree {
+.containerentree.chic p, h2.etape.entreechic {
   color: #be6913;
 }
 
-.containerplat.chic p, h2.etape.plat {
+.containerplat.chic p, h2.etape.platchic {
   color: #9b5c8e;
 }
 
-.containerdessert.chic p, h2.etape.dessert {
+.containerdessert.chic p, h2.etape.dessertchic {
   color: #6343c5;
 }
 
 /*mobil menu2*/
 @media only screen and (max-width: 1023px) {
+  img.trait1chic, img.trait2chic, img.trait3chic, img.trait4chic, img.trait5chic, img.trait6chic {
+    height: 2px;
+  }
+
+  h2.etape {
+    font-size: 15px;
+  }
+
   .containerentree.chic, .containerplat.chic, .containerdessert.chic {
     margin: 0px 20px;
     display: flex;
@@ -483,6 +540,18 @@ h1.title.chic {
   }
 }
 /*Style menu3*/
+img.trait1delice, img.trait2delice, img.trait3delice, img.trait4delice, img.trait5delice, img.trait6delice {
+  height: 8px;
+  width: auto;
+  padding: 10px 20px 10px 20px;
+}
+
+h2.etape {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px;
+}
+
 main.containerprincipal.delice {
   background-color: #edefef;
   width: 45em;
@@ -491,7 +560,7 @@ main.containerprincipal.delice {
 }
 
 section.decription.delice {
-  font-size: "Kalam", cursive;
+  font-family: "Kalam", cursive;
 }
 
 h1.title.delice {
@@ -509,6 +578,14 @@ h1.title.delice {
 
 /*mobil menu3*/
 @media only screen and (max-width: 1023px) {
+  img.trait1delice, img.trait2delice, img.trait3delice, img.trait4delice, img.trait5delice, img.trait6delice {
+    height: 2px;
+  }
+
+  h2.etape {
+    font-size: 15px;
+  }
+
   .containerentree, .containerplat, .containerdessert {
     margin: 0px 20px;
     display: flex;
@@ -538,6 +615,30 @@ h1.title.delice {
   }
 }
 /*style menu4*/
+img.trait1palette, img.trait2palette {
+  height: 8px;
+  width: auto;
+}
+
+h2.etape {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0px;
+}
+
+img.trait1palette.entree, img.trait2palette.entree {
+  padding: 15px 60px 0px 60px;
+}
+
+img.trait1palette.plat, img.trait2palette.plat {
+  padding: 15px 25px 0px 25px;
+}
+
+img.trait1palette.dessert, img.trait2palette.dessert {
+  padding: 15px 18px 0px 18px;
+}
+
 main.containerprincipal.palette {
   background-color: #fdfffd;
   width: 45em;
@@ -546,7 +647,7 @@ main.containerprincipal.palette {
 }
 
 section.description.palette {
-  font-size: "Kalam", cursive;
+  font-family: "Kalam", cursive;
 }
 
 h1.title.palette {
@@ -564,6 +665,15 @@ h1.title.palette {
 
 /*mobil menu4*/
 @media only screen and (max-width: 1023px) {
+  img.trait1palette, img.trait2palette {
+    height: 2px;
+  }
+
+  h2.etape {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
   .containerentree, .containerplat, .containerdessert {
     margin: 0px 20px;
     display: flex;
