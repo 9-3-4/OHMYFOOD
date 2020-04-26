@@ -3,32 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.scss">  
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">  
     <title>Le délice des papilles</title>
 </head>
 <body>
-    <h1>Le délice des papilles</h1>
-        <h2>Pour bien commencer</h2>
-            <p>Tartare de thon assaisonné au yuzu</p>
-            <p>55€</p>
-            <p>Bouchée de homard croustillant et sa farandole de petits légumes</p>
-            <p>89€</p>
-            <p>Velouté de cèpes aux truffes</p>
-            <p>56€</p>
-        <h2>Pour bien continuer</h2>
-            <p>poulet rôti aux herbes de provence et sa crème de truffe</p>
-            <p>110€</p>
-            <p>Langouste rôtie et ses légumes de saison</p>
-            <p>225€</p>
-            <p>Côte de boeuf angus et sa purée de panais</p>
-            <p>115€</p>
-        <h2>Pour bien terminer</h2>
-            <p>Farandole de desserts du chef</p>
-            <p>55€</p>
-            <p>Crème brulée revisitée</p>
-            <p>60€</p>
-            <p>Tiramisu à la noisette</p>
-            <p>55€</p>
-    
+    <header class="backgroundedcontent">
+        <a href="accueil.html" class="backgroundedcontent logo">ohmyfood</a>
+    </header>
+    <aside class="titlemenu">Le délice des papilles</aside>
+        <main class="containerprincipal delice">
+        <h1 class="title delice">Le délice des papilles</h1>
+            <section class="description delice">
+                <div class="center">
+                    <img class="trait1delice entree" src="Images/Trait1delice.png" alt="trait séparateur"/>   
+                    <h2 class="etape entreedelice">Pour bien commencer</h2>
+                    <img class="trait2delice entree" src="Images/Trait2delice.png" alt="trait séparateur"/>
+                </div><!--fin center-->
+                    <div class="containerentree">
+                        <div class="container1">        
+                            <p class="entree">Tartare de thon assaisonné au yuzu</p>
+                            <p class="prix">55€</p>
+                        </div><!--fin container1-->
+                        <div class="container2">
+                            <p class="entree">Bouchée de homard croustillant et sa farandole de petits légumes</p>
+                            <p class="prix">89€</p>
+                        </div><!--fin container2-->
+                        <div class="container3">
+                            <p class="entree">Velouté de cèpes aux truffes</p>
+                            <p class="prix">56€</p>
+                        </div><!--fin container3-->
+                    </div><!--fin containerentree-->
+                    <div class="center">
+                        <img class="trait3delice plat" src="Images/Trait3delice.png" alt="trait séparateur"/>
+                        <h2 class="etape platdelice">Pour bien continuer</h2>
+                        <img class="trait4delice plat" src="Images/Trait4delice.png" alt="trait séparateur"/>
+                    </div><!--fin center-->
+                    <div class="containerplat">    
+                        <div class="container1">
+                            <p class="plat">Poulet rôti aux herbes de provence et sa crème de truffe</p>
+                            <p class="prix">110€</p>
+                        </div><!--fin container1-->
+                        <div class="container2">
+                            <p class="plat">Langouste rôtie et ses légumes de saison</p>
+                            <p class="prix">225€</p>
+                        </div><!--fin container2-->
+                        <div class="container3">
+                            <p class="plat">Côte de boeuf angus et sa purée de panais</p>
+                            <p class="prix">115€</p>
+                        </div><!--fin container3-->
+                    </div><!--fin containerplat-->
+                    <div class="center">
+                        <img class="trait5delice dessert" src="Images/Trait5delice.png" alt="trait séparateur"/>
+                        <h2 class="etape dessertdelice">Pour bien terminer</h2>
+                        <img class="trait6delice dessert" src="Images/Trait6delice.png" alt="trait séparateur"/>
+                    </div><!--fin center-->
+                    <div class="containerdessert">
+                        <div class="container1">
+                            <p class="dessert">Farandole de desserts du chef</p>
+                            <p class="prix">55€</p>
+                        </div><!--fin container1-->
+                        <div class="container2">
+                            <p class="dessert">Crème brulée revisitée</p>
+                            <p class="prix">60€</p>
+                        </div><!--fin container2-->
+                        <div class="container3">
+                            <p class="dessert">Tiramisu à la noisette</p>
+                            <p class="prix">55€</p>
+                        </div><!--fin container3-->
+                    </div><!--fin containerdessert-->    
+                </section><!--fin description-->
+        </main><!--fin containerprincipal-->
+    <footer class="backgroundedcontent foot">
+        <div>
+            <a href="mention.html" class="backgroundedcontent foot__lien--animation">Mentions légales</a>
+        </div>
+        <div>
+            <a href="mailto:ohmyfood@ooo.com" class="backgroundedcontent foot__lien--animation">Contactez-nous</a>
+        </div>
+    </footer>
 </body>
 </html>

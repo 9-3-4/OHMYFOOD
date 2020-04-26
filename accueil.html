@@ -4,48 +4,69 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ohmyfood</title>
-        <link rel="stylesheet" type="text/css" href="style.css">    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Croissant+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Devonshire&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1><a href="accueil.html" class="menu--lien">Ohmyfood</a></h1>
+        <header class="backgroundedcontent">
+            <h1><a href="accueil.html" class="backgroundedcontent logo">ohmyfood</a></h1>
         </header>
-        <main class="Menus">
-            <div class="menu-prev">
-                <img class="menu-prev--croche" src="" alt="note de musique"/>
-                <p class="menu-prev--note__titre">La note enchantée</p>
-                <a href="menu1.html" class="">Menu</a>                
+        <main class="containermenu">
+            <section class="containermenu1_2 ">
+                <div class="containermenu1_2--note menu">
+                    <a href="menu1.html" class="titre--lien note">
+                        <div class="contenu">
+                            <img class="note1" src="Images/note_musique.png" alt="note de musique"/>
+                            <h2 class="note">La note enchantée</h2>
+                            <p>MENU</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="containermenu1_2--chic menu">
+                    <a href="menu2.html" class="titre--lien chic">
+                        <div class="contenu">
+                            <h2 class="chic">Le chic à la française</h2>
+                            <p>Menu</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="containermenu3_4"> 
+                <div class="containermenu3_4--delice menu">
+                    <a href="menu3.html" class="titre--lien delice">
+                        <div class="contenu">
+                            <h2 class="delice">Le délice des papilles</h2>
+                            <p>Menu</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="containermenu3_4--palette menu">
+                    <a href="menu4.html" class="titre--lien palette">
+                        <div class="contenu">
+                            <h2 class="palette">La palette du goût</h2>
+                            <p>Menu</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main><!--fin container menu-->
+        <section class="backgroundedcontent prochain">
+            <p> Prochainement  <span>.</span><span>.</span><span>.</span></p>
+        </section>
+        <footer class="backgroundedcontent foot">
+            <div>
+                <a href="mention.html" class="backgroundedcontent foot__lien--animation">Mentions légales</a>
             </div>
-            <div class="menu-prev">
-                <p class="menu-prev--chic__titre" >La palette du goût"</p>
-                <a href="menu2.html" class="">Menu</a>
-            </div>
-            <div class="menu-prev">
-                <p class="menu-prev--delice__titre">Le délice des papilles</p>
-                <a href="menu3.html" class="">Menu</a>
-            </div>
-            <div class="menu-prev">
-                <p class="menu-prev--palette__titre">La palette du goût</p>
-                <a href="menu4.html" class="">Menu</a>
-            </div>
-
-        </main>
-        <section class="prochain">Prochainement</section>
-        <footer class="pied">
-            <div class="mentions">
-            <p>Mentions légales</p>
-            </div>
-            <div class="contact">
-            <p>Contactez-nous</p>
+            <div>
+                <a href="mailto:ohmyfood@ooo.com" class="backgroundedcontent foot__lien--animation">Contactez-nous</a>
             </div>
         </footer>
-
-
-
-
-
-        </article>
-        </div><!--fin conteneur principal-->
-
     </body>
 </html>

@@ -1,0 +1,9 @@
+h2.etape {
+    color:inherit;
+    background: linear-gradient(to top, rgb(19, 230, 184) , transparent 10%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size .4s;
+  }
+h2.etape:hover {
+    background-size: 100% 100%;
+}

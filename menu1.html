@@ -3,31 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.scss">  
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Devonshire&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <title>La note enchantée</title>
 </head>
 <body>
-    <h1>La note enchantée</h1>
-        <h2>Prélude</h2>
-            <p>Ravioles de foie gras accompagnés de leur crème à la truffe</p>
-            <p>98€</p>
-            <p>Caviar osiètre sur blini à la farine de blé noir</p>
-            <p>115€</p>
-            <p>Homard et espuma de potiron mariné aux zests d'orange</p>
-            <p>89€</p>
-            <p>Foie gras de canard cuit entier, confiture de figue et pain toasté</p>
-            <p>105€</p>
-        <h2>Point d'orgue</h2>
-            <p>Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
-            <p>102€</p>
-            <p>Langoustine poêlée, purée de patate douce</p>
-            <p>205€</p>
-            <p>Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
-            <p>169€</p>
-        <h2>Mouvement final</h2>
-            <p>Macaron noisette et chocolat, glace au caramel brun et sel de Guérande </p>
-            <p>Baba au rhum revisité avec son coilis de citron</p>
-            <p>Tarte au citron meringuée destructurée</p>
+    <header class="backgroundedcontent">
+        <a href="accueil.html" class="backgroundedcontent logo">ohmyfood</a>
+    </header>    
+    <aside class="titlemenu">La note enchantée</aside>
+        <main class="containerprincipal note">
+            <img class="note1" src="Images/note_musique.png" alt="note de musique"/>
+            <h1 class="title note">La note enchantée</h1>
+                <section class="description note">
+                    <div class="center">
+                        <img class="trait1note entree" src="Images/Trait1note.png" alt="trait séparateur"/>
+                        <h2 class="etape entreenote">Prélude</h2>
+                        <img class="trait2note entree" src="Images/Trait2note.png" alt="trait séparateur"/>
+                    </div><!--fin center-->
+                    <div class="containerentree">
+                        <div class="container1">
+                            <p class="entree">Ravioles de foie gras accompagnés de leur crème à la truffe</p>
+                            <p class="prix">98€</p>
+                        </div><!--fin container1-->
+                        <div class="container2">
+                            <p class="entree">Caviar osciètre sur blini à la farine de blé noir</p>
+                            <p class="prix">115€</p>
+                        </div><!--fin container2-->
+                        <div class="container3">
+                            <p class="entree">Homard et espuma de potiron mariné aux zests d'orange</p>
+                            <p class="prix">89€</p>
+                        </div><!--fin container3-->
+                        <div class="container4">
+                            <p class="entree">Foie gras de canard cuit entier, confiture de figue et pain toasté</p>
+                            <p class="prix">105€</p>
+                        </div><!--fin container4-->
+                    </div><!--fin containerentree-->
+                    <div class="center">
+                        <img class="trait1note plat" src="Images/Trait1note.png" alt="trait séparateur"/>
+                        <h2 class="etape platnote">Point d'orgue</h2>
+                        <img class="trait2note plat" src="Images/Trait2note.png" alt="trait séparateur"/>
+                    </div><!--fin center-->
+                    <div class="containerplat">
+                        <div class="container1">
+                            <p class="plat">Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
+                            <p class="prix">102€</p>
+                        </div><!--fin container1-->
+                        <div class="container2">
+                            <p class="plat">Langoustine poêlée, purée de patate douce</p>
+                            <p class="prix">205€</p>
+                        </div><!--fin container 2-->
+                        <div class="container3">    
+                            <p class="plat">Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
+                            <p class="prix">169€</p>
+                        </div><!--fin container3-->
+                    </div><!--fin containerPlat-->
+                    <div class="center">
+                        <img class="trait1note dessert" src="Images/Trait1note.png" alt="trait séparateur"/>
+                        <h2 class="etape dessertnote">Mouvement final</h2>
+                        <img class="trait2note dessert" src="Images/Trait2note.png" alt="trait séparateur"/>
+                    </div><!--fin center-->
+                    <div class="containerdessert">
+                        <p class="container1">Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
+                        <p class="container2">Baba au rhum revisité avec son coulis de citron</p>
+                        <p class="container3">Tarte au citron meringuée destructurée</p>
+                    </div><!--fin container dessert-->
+                </section> <!--fin description-->          
+            <aside class="notemusic">
+                <img class="note2" src="Images/note_musique.png" alt="note de musique"/>  <span class="note"> La note enchantée</span>
+            </aside><!--fin notemusic-->        
+        </main><!--fin containerprincipal-->        
+        <footer class="backgroundedcontent foot">
+            <div>
+                <a href="mention.html" class="backgroundedcontent foot__lien--animation">Mentions légales</a>
+            </div>
+            <div>
+                <a href="mailto:ohmyfood@ooo.com" class="backgroundedcontent foot__lien--animation">Contactez-nous</a>
+            </div>
+        </footer>
 </body>
 </html>
 

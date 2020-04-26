@@ -1,0 +1,719 @@
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+.prochain span {
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.prochain span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.prochain span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.foot__lien--animation:hover {
+  display: block;
+  animation: wiggle 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+div.contenu:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+  transition: transform 1s;
+}
+
+h2.etape {
+  color: inherit;
+  background: linear-gradient(to top, #13e6b8, transparent 10%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.4s;
+}
+
+h2.etape:hover {
+  background-size: 100% 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.backgroundedcontent {
+  font-family: "Montserrat", sans-serif;
+  background-color: #579c87;
+  font-weight: bolder;
+}
+.backgroundedcontent a, .backgroundedcontent.prochain {
+  text-decoration: none;
+  color: #fdcb46;
+}
+.backgroundedcontent.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0px 20px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0px;
+  font-size: 50px;
+}
+
+.backgroundedcontent h1 {
+  margin: 0px;
+}
+
+img.note1 {
+  width: 60px;
+}
+
+.prochain {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto 80px auto;
+}
+
+.titre--lien {
+  text-decoration: none;
+  font-size: 60px;
+}
+
+section.containermenu1_2, section.containermenu3_4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px auto 30px auto;
+  height: 30em;
+}
+
+.containermenu section div.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 28em;
+  max-height: 60em;
+}
+
+h2.note, h2.delice, h2.palette {
+  font-size: 40px;
+  padding-left: 3px;
+}
+
+h2.chic {
+  font-size: 30px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+div.menu {
+  box-shadow: 0px 0px 22px 4px #E0E0E0;
+  max-height: 350px;
+}
+
+.containermenu1_2--note.menu {
+  background-color: #fcdfdb;
+  font-family: "Devonshire", cursive;
+}
+.containermenu1_2--note.menu p {
+  font-family: "Kalam", cursive;
+  color: #3d1319;
+}
+.containermenu1_2--note.menu h2.note {
+  color: #3d1319;
+}
+
+.containermenu1_2--chic.menu {
+  background-color: #fff5fe;
+  font-family: "Croissant One", cursive;
+}
+.containermenu1_2--chic.menu p {
+  font-family: "Abril Fatface", cursive;
+  color: #be6913;
+  font-weight: bold;
+}
+.containermenu1_2--chic.menu h2.chic {
+  background-image: linear-gradient(to right, #be6913, #9b5c8e, #6343c5);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.containermenu3_4--delice.menu {
+  background-color: #edefef;
+  font-family: "Dancing Script", cursive;
+}
+.containermenu3_4--delice.menu p {
+  font-family: "Kalam", cursive;
+  color: #0889fb;
+}
+.containermenu3_4--delice.menu h2.delice {
+  background-image: linear-gradient(to right, #0229dd, #0889fb);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.containermenu3_4--palette.menu {
+  background-color: #fdfffd;
+  font-family: "Kaushan Script", cursive;
+}
+.containermenu3_4--palette.menu p {
+  font-family: "Kalam", cursive;
+  color: #43973d;
+}
+.containermenu3_4--palette.menu h2.palette {
+  background-image: linear-gradient(to right, #43973d, #beff7f);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/*mobil accueil*/
+@media only screen and (max-width: 1023px) {
+  .containermenu section div.menu {
+    width: 12em;
+    max-height: 22em;
+  }
+
+  div.containermenu1_2--note.menu, div.containermenu1_2--chic.menu, div.containermenu3_4--delice.menu, div.containermenu3_4--palette.menu {
+    width: 10em;
+    max-height: 20em;
+  }
+
+  h2.note, h2.delice, h2.palette {
+    font-size: 21px;
+  }
+
+  h2.chic {
+    font-size: 12px;
+  }
+
+  section.containermenu1_2, section.containermenu3_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10em;
+  }
+
+  div.menu {
+    height: 12em;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  img.note1 {
+    width: 20px;
+  }
+
+  .titre--lien {
+    font-size: 25px;
+  }
+
+  .foot a {
+    font-size: 12px;
+  }
+}
+/*Style menu1*/
+aside.titlemenu {
+  text-align: center;
+  display: block;
+  width: auto;
+  margin: auto;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+main.containerprincipal.note {
+  background-color: #fcdfdb;
+  width: 45em;
+  height: 66em;
+  margin: auto auto 85px auto;
+}
+
+h1.title.note {
+  font-family: "Devonshire", cursive;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+img.note1 {
+  display: block;
+  padding-top: 35px;
+  margin: 0px auto;
+}
+
+img.trait1note, img.trait2note {
+  height: 6px;
+  width: auto;
+}
+
+h2.etape {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px;
+}
+
+img.trait1note.entree, img.trait2note.entree {
+  padding: 15px 56px 0px 56px;
+}
+
+img.trait1note.plat, img.trait2note.plat {
+  padding: 15px 30px 0px 30px;
+}
+
+img.trait1note.dessert, img.trait2note.dessert {
+  padding: 15px 18px 0px 18px;
+}
+
+div.center {
+  display: flex;
+  justify-content: center;
+}
+
+p.prix {
+  font-weight: bolder;
+}
+
+section.description.note {
+  font-family: "Kalam", cursive;
+}
+
+.containerentree, .containerplat, .containerdessert {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 100px;
+}
+
+.container1, .container2, .container3, .container4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside.notemusic {
+  display: flex;
+  justify-content: center;
+  margin: 45px;
+}
+aside.notemusic img.note2 {
+  width: 30px;
+  margin-bottom: 20px;
+}
+
+span.note {
+  font-family: "Devonshire", cursive;
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+/*mobil menu1*/
+@media only screen and (max-width: 1023px) {
+  img.trait1note, img.trait2note {
+    height: 2px;
+  }
+
+  aside.titlemenu {
+    display: none;
+  }
+
+  main.containerprincipal.note {
+    margin-top: 5px;
+    width: 20em;
+    height: auto;
+  }
+
+  h1.title.note {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  img.note1 {
+    padding: 15px;
+  }
+
+  h2.etape {
+    font-size: 15px;
+  }
+
+  .containerentree, .containerplat, .containerdessert {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  div.container1, div.container2, div.container3, div.container4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  p.prix {
+    margin-top: 0px;
+  }
+
+  p.entree, p.plat, p.dessert {
+    margin-bottom: 0px;
+  }
+
+  aside.notemusic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  img.note2 {
+    width: 20px;
+    margin-top: 10px;
+  }
+
+  span.note {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+/*Style Menu2*/
+img.trait1chic, img.trait2chic, img.trait3chic, img.trait4chic, img.trait5chic, img.trait6chic {
+  height: 10px;
+  width: auto;
+}
+
+h2.etape {
+  display: inline-block;
+  font-size: 10px;
+  margin: 0px;
+}
+
+img.trait1chic.entree, img.trait2chic.entree {
+  padding: 10px 20px 0px 20px;
+}
+
+img.trait3chic.plat, img.trait4chic.plat {
+  padding: 15px 30px 0px 30px;
+}
+
+img.trait5chic.dessert, img.trait6chic.dessert {
+  padding: 10px 18px 0px 18px;
+}
+
+main.containerprincipal.chic {
+  background-color: #fff5fe;
+  width: 45em;
+  height: 66em;
+  margin: auto auto 85px auto;
+}
+
+section.description.chic {
+  font-family: "Gelasio", serif;
+  font-weight: lighter;
+}
+
+h1.title.chic {
+  font-family: "Croissant One", cursive;
+  background-image: linear-gradient(to right, #be6913 10%, #9b5c8e 90%, #6343c5);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 0px;
+  padding-top: 70px;
+}
+
+.containerentree.chic p, h2.etape.entreechic {
+  color: #be6913;
+}
+
+.containerplat.chic p, h2.etape.platchic {
+  color: #9b5c8e;
+}
+
+.containerdessert.chic p, h2.etape.dessertchic {
+  color: #6343c5;
+}
+
+/*mobil menu2*/
+@media only screen and (max-width: 1023px) {
+  img.trait1chic, img.trait2chic, img.trait3chic, img.trait4chic, img.trait5chic, img.trait6chic {
+    height: 2px;
+  }
+
+  h2.etape {
+    font-size: 15px;
+  }
+
+  .containerentree.chic, .containerplat.chic, .containerdessert.chic {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  main.containerprincipal.chic {
+    margin-top: 5px;
+    width: 20em;
+    height: auto;
+  }
+
+  h1.title.chic {
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+/*Style menu3*/
+img.trait1delice, img.trait2delice, img.trait3delice, img.trait4delice, img.trait5delice, img.trait6delice {
+  height: 8px;
+  width: auto;
+  padding: 10px 20px 10px 20px;
+}
+
+h2.etape {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px;
+}
+
+main.containerprincipal.delice {
+  background-color: #edefef;
+  width: 45em;
+  height: 66em;
+  margin: auto auto 85px auto;
+}
+
+section.decription.delice {
+  font-family: "Kalam", cursive;
+}
+
+h1.title.delice {
+  font-family: "Dancing Script", cursive;
+  background-image: linear-gradient(to right, #0000CD 10%, #03A9F4 90%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 0px;
+  padding-top: 70px;
+}
+
+/*mobil menu3*/
+@media only screen and (max-width: 1023px) {
+  img.trait1delice, img.trait2delice, img.trait3delice, img.trait4delice, img.trait5delice, img.trait6delice {
+    height: 2px;
+  }
+
+  h2.etape {
+    font-size: 15px;
+  }
+
+  .containerentree, .containerplat, .containerdessert {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  p.prix {
+    margin-top: 0px;
+  }
+
+  p.entree, p.plat, p.dessert {
+    margin-bottom: 0px;
+  }
+
+  main.containerprincipal.delice {
+    margin-top: 5px;
+    width: 20em;
+    height: auto;
+  }
+
+  h1.title.delice {
+    font-size: 30px;
+    padding: 15px;
+  }
+}
+/*style menu4*/
+img.trait1palette, img.trait2palette {
+  height: 8px;
+  width: auto;
+}
+
+h2.etape {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0px;
+}
+
+img.trait1palette.entree, img.trait2palette.entree {
+  padding: 15px 60px 0px 60px;
+}
+
+img.trait1palette.plat, img.trait2palette.plat {
+  padding: 15px 25px 0px 25px;
+}
+
+img.trait1palette.dessert, img.trait2palette.dessert {
+  padding: 15px 18px 0px 18px;
+}
+
+main.containerprincipal.palette {
+  background-color: #fdfffd;
+  width: 45em;
+  height: 66em;
+  margin: auto auto 85px auto;
+}
+
+section.description.palette {
+  font-family: "Kalam", cursive;
+}
+
+h1.title.palette {
+  font-family: "Kaushan Script", cursive;
+  background-image: linear-gradient(to right, #4CAF50 10%, #CCFF90 90%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 0px;
+  padding-top: 70px;
+}
+
+/*mobil menu4*/
+@media only screen and (max-width: 1023px) {
+  img.trait1palette, img.trait2palette {
+    height: 2px;
+  }
+
+  h2.etape {
+    font-size: 14px;
+    font-weight: bolder;
+  }
+
+  .containerentree, .containerplat, .containerdessert {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  main.containerprincipal.palette {
+    margin-top: 5px;
+    width: 20em;
+    height: auto;
+  }
+
+  h1.title.palette {
+    font-size: 30px;
+    padding: 15px;
+  }
+}
+/*mentions legales*/
+p.text {
+  text-align: justify;
+}
+
+h1.mentionslegales {
+  font-size: bolder;
+  text-decoration: underline overline #FF3028;
+  display: flex;
+  justify-content: center;
+}
+
+h2.paragraphs {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+article.mentions {
+  margin: 30px;
+  padding-bottom: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
