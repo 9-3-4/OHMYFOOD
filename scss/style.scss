@@ -17,7 +17,7 @@ body{
 .backgroundedcontent {
 	font-family: 'Montserrat', sans-serif;
 	background-color:$couleur-fond-banniere;
-	font-weight: bold;
+	font-weight: bolder;
 	
 	a, &.prochain{
 		text-decoration:$lien;
@@ -205,7 +205,7 @@ aside.titlemenu{
 	width: auto;
 	margin: auto;
 	font-size: 25px;
-	font-weight: bold;
+	font-weight: bolder;
 }
 main.containerprincipal.note{
 	background-color: $background-menu1;
@@ -247,7 +247,6 @@ div.center{
 	display: flex;
 	justify-content: center;
 }
-
 p.prix{
 	font-weight: bolder;
 }
@@ -277,7 +276,7 @@ aside.notemusic{
 span.note{
 	font-family: $font-titre-menu1;
 	margin-left: 10px;
-	font-weight: bold;
+	font-weight: bolder;
 	font-size: 25px;
 }
 
@@ -343,7 +342,7 @@ span.note{
 }
 /*Style Menu2*/
 $font-titre-menu2: 'Croissant One', cursive;
-$font-texte-menu2: 'Abril Fatface', cursive;
+$font-texte-menu2: 'Gelasio', serif;
 
 img.trait1chic, img.trait2chic, img.trait3chic, img.trait4chic, img.trait5chic, img.trait6chic{
 	height: 10px;
@@ -444,7 +443,7 @@ main.containerprincipal.delice{
 	margin: auto auto 85px auto;
 }
 section.decription.delice{
-	font-family:$font-texte-menu3;
+	font-family: $font-texte-menu3;
 }
 h1.title.delice{
 	font-family: $font-titre-menu3;
@@ -546,7 +545,7 @@ img.trait1palette, img.trait2palette{
 }
 h2.etape{
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: bolder;
 }
 .containerentree, .containerplat, .containerdessert{
 		margin: 0px 20px;
@@ -572,7 +571,7 @@ p.text{
 	text-align: justify;
 }
 h1.mentionslegales{
-	font-size: bold;
+	font-size: bolder;
 	text-decoration: underline overline #FF3028;
 	display: flex;
 	justify-content: center;

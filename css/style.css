@@ -89,7 +89,7 @@ body {
 .backgroundedcontent {
   font-family: "Montserrat", sans-serif;
   background-color: #579c87;
-  font-weight: bold;
+  font-weight: bolder;
 }
 .backgroundedcontent a, .backgroundedcontent.prochain {
   text-decoration: none;
@@ -289,7 +289,7 @@ aside.titlemenu {
   width: auto;
   margin: auto;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 main.containerprincipal.note {
@@ -374,7 +374,7 @@ aside.notemusic img.note2 {
 span.note {
   font-family: "Devonshire", cursive;
   margin-left: 10px;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 25px;
 }
 
@@ -480,7 +480,7 @@ main.containerprincipal.chic {
 }
 
 section.description.chic {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Gelasio", serif;
   font-weight: lighter;
 }
 
@@ -671,7 +671,7 @@ h1.title.palette {
 
   h2.etape {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bolder;
   }
 
   .containerentree, .containerplat, .containerdessert {
@@ -700,7 +700,7 @@ p.text {
 }
 
 h1.mentionslegales {
-  font-size: bold;
+  font-size: bolder;
   text-decoration: underline overline #FF3028;
   display: flex;
   justify-content: center;
