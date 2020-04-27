@@ -1,4 +1,4 @@
-@keyframes blink{
+@keyframes ellipsis{
     0%{
 		opacity: .2;
 	}
@@ -10,7 +10,7 @@
     }
 }
 .prochain span{
-    animation-name: blink;
+    animation-name: ellipsis;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
