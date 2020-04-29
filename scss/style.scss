@@ -530,7 +530,6 @@ h1.title.palette{
     background-image: linear-gradient(to right, #4CAF50 10%, #CCFF90 90%);
 	color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;
 	display: flex;
 	justify-content: center;
 	font-size: 50px;
@@ -571,7 +570,7 @@ p.text{
 	text-align: justify;
 }
 h1.mentionslegales{
-	font-size: bolder;
+	font-weight: bolder;
 	text-decoration: underline overline #FF3028;
 	display: flex;
 	justify-content: center;
